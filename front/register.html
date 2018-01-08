@@ -1,0 +1,160 @@
+<html>  
+<head>  
+    <title>注册界面</title>  
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+    <script type="text/javascript">  
+        //窗体改变大小时触发事件  
+        window.onresize = setViewSize;  
+        var marginLeft=0;  
+        var marginTop=0;  
+        //设置画布大小，登录页面显示在屏幕最中间  
+        function setViewSize() {  
+            //计算屏幕大小  
+            var w=window.innerWidth  
+            || document.documentElement.clientWidth  
+            || document.body.clientWidth;  
+            var h=window.innerHeight  
+            || document.documentElement.clientHeight  
+            || document.body.clientHeight;  
+            //设置登陆div的位置  
+            marginLeft = (w-468)/2;  
+            marginTop = (h-262)/2;  
+            document.getElementById("loginFormMain").style.marginLeft=marginLeft;  
+            document.getElementById("loginFormMain").style.marginTop=marginTop;  
+        }  
+          
+        //默认聚焦在用户名输入框上  
+        function focusOnUsername() {  
+            //调整画布大小和登陆框位置  
+            setViewSize();  
+            //默认聚焦在输入框上  
+            if (document.registerForm) {  
+                var usernameInput = document.registerForm.username;  
+                if (usernameInput) {  
+                    usernameInput.focus();  
+                }  
+            }  
+            return;  
+        }  
+      
+        //检查用户输入  
+       function checkregister(){ 
+        var username = document.registerForm.username;
+        var password = document.registerForm.password;
+        var confirm = document.registerForm.confirm;
+        if(username.value.length==0 || password.value.length==0 ||confirm.value.length==0){ 
+            alert("请输入用户名或密码");
+         }
+         else if(password.value !== confirm.value){
+         	alert("两次密码输入不一致！");
+         }
+        else{
+        	registerXMLDoc(username.value,password.value)
+          
+        } 
+      
+      }
+
+      function registerXMLDoc(name, pwd)
+	    {
+	      var xmlhttp;
+	      var result;
+	      if (window.XMLHttpRequest)
+	      {// code for IE7+, Firefox, Chrome, Opera, Safari
+	          xmlhttp=new XMLHttpRequest();
+	      }
+	      else
+	      {// code for IE6, IE5
+	          xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	      }
+	      xmlhttp.onreadystatechange=function()
+	      {
+	        console.log(xmlhttp.readyState)
+	          if (xmlhttp.readyState==4 && xmlhttp.status==200)
+	          {
+	              result=JSON.parse(xmlhttp.responseText);//返回判断是否正确，跳转或alert
+	              console.log(xmlhttp.responseText)
+	              if(result.message==="success"){
+	                window.location.href="login.html";
+	              }
+	              else{
+	                alert("注册失败，用户名已被注册！");
+	              }
+	          }
+	      }
+	      xmlhttp.open("Post","http://111.230.233.124/market/index.php/Home/User/register?",true);
+	      xmlhttp.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+	      
+	      
+	      var s = JSON.stringify({name:name, password:pwd, is_sale:0})
+	      console.log(s);
+	      xmlhttp.send(s);
+	    }
+    </script>  
+</head> 
+
+<body " onload="javascript:focusOnUsername();" >
+	<div id="header">
+			<div class="topbar">
+				<div class="comWidth2">
+					<ul class="leftArea">
+						<li>
+							<a href="index.html">玫瑰网：二手玫瑰，手有余香</a>
+						</li>
+						<li>
+							<span class="sep">|</span>
+						</li>
+						<li>
+							<a href="#">关于我们</a>
+						</li>
+						<li>
+							<span class="sep">|</span>
+						</li>
+						<li>
+							<a href="#">问题反馈</a>
+						</li>
+						
+					</ul>
+					<div class="rightArea">
+						<div class="login fl">
+							<a href="login.html">登录</a>
+				            <span class="sep">|</span>
+				            <a href="register.html">注册买家</a>
+				            <span class="sep">|</span>
+				            <a href="registerseller.html">注册卖家</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	 
+	 <div  id="loginFormMain">
+		 <table  style="width:468px;height:262px;background-color: #d2cfcf;text-align: center;">
+			  <form action="#0" name="registerForm">
+			  <tr>
+			  	 <th colspan="2" align="center" >用户注册</th>
+			  </tr>
+			  <tr>
+			      <td>用户名: <input type="text" style="width: 200px;height: 30px;"  name="username"></td>
+			  </tr>
+			  <tr>
+			      <td>密  码: <input type="password"  style="width: 200px;height: 30px;"  name="password"></td>
+			  </tr>
+			  <tr>
+			      <td>确认密码: <input type="password"  style="width: 200px;height: 30px;"  name="confirm"></td>
+			  </tr>
+			  </form>
+			  <tr>
+			      <td align="center" >
+			      	<input type="submit" style="cursor: pointer;font-style: inherit;" class="register_btn" value="注册" > 
+			        <input type="reset"  style="cursor: pointer;" name="reset"  value="重置"></td>
+			  </tr>
+		 </table>
+	 </div>
+	 
+</body>
+</html>

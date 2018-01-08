@@ -1,0 +1,1574 @@
+[ 2018-01-06T00:14:32+08:00 ] 113.108.21.80 /market/index.php/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined variable: sex /usr/share/nginx/html/market/Application/Home/Controller/IndexController.class.php 第 19 行.
+
+[ 2018-01-06T00:16:36+08:00 ] 101.199.112.49 /market/index.php/home/goods/searchGoods?type=%E8%A1%A3&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '衣' LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-06T00:19:37+08:00 ] 101.199.112.49 /market/index.php/home/goods/searchGoods?type=%E8%A1%A3&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '衣' LIMIT 0,10   [ RunTime:0.0009s ]
+
+[ 2018-01-06T00:34:29+08:00 ] 183.57.53.177 /market/index.php/home/goods/viewGoods?user_id%3D48%26_%3D1515164079578
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `user_id` = 1 LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2018-01-06T01:08:39+08:00 ] 163.177.90.152 /market/index.php/home/comments/viewcomments?goodsId%3D96%26_%3D1515164096214
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `market_comments` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`user_id`,`content` FROM `market_comments` WHERE `goods_id` = 1 LIMIT 0,10   [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `market_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `market_user` WHERE `user_id` = 12 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `market_user` WHERE `user_id` = 0 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `market_user` WHERE `user_id` = 0 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2018-01-06T01:44:36+08:00 ] 101.226.68.215 //market/index.php/home/goods/getgoods?goodId%253D83%2526_%253D1515157525392
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `id` = 0 LIMIT 0,10   [ RunTime:0.0007s ]
+
+[ 2018-01-06T02:55:15+08:00 ] 183.57.53.196 /market/index.php/home/goods/viewGoods?user_id%253D48%2526_%253D1515164079578
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `user_id` = 1 LIMIT 0,10   [ RunTime:0.0009s ]
+
+[ 2018-01-06T03:54:10+08:00 ] 101.226.64.174 //market/index.php/home/goods/getgoods?goodId%25253D83%252526_%25253D1515157525392
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `id` = 0 LIMIT 0,10   [ RunTime:0.0011s ]
+
+[ 2018-01-06T09:49:46+08:00 ] 106.120.206.132 /market/index.php/home/car/viewCar?carId=37&_=1515203363796
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`car_id`,`goods_id`,`nums` FROM `market_car` WHERE `car_id` = '37' LIMIT 0,10   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 6  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 5  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 73  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 4  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 77  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 1  [ RunTime:0.0007s ]
+
+[ 2018-01-06T09:49:56+08:00 ] 106.120.206.132 /market/index.php/home/goods/searchGoods?title=test&pn=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `title` LIKE '%test%' LIMIT 0,10   [ RunTime:0.0007s ]
+
+[ 2018-01-06T09:49:56+08:00 ] 106.120.206.132 /market/index.php/home/goods/searchGoods?title=test&pn=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `title` LIKE '%test%' LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2018-01-06T09:49:58+08:00 ] 106.120.206.132 /market/index.php/home/goods/searchGoods?title=test&pn=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `title` LIKE '%test%' LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-06T09:50:00+08:00 ] 106.120.206.132 /market/index.php/home/goods/searchGoods?title=&pn=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-06T09:50:10+08:00 ] 106.120.206.132 //market/index.php/home/goods/getgoods?goodId=93&_=1515203386827
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `id` = 93 LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-06T09:50:10+08:00 ] 106.120.206.132 /market/index.php/home/comments/viewcomments?goodsId=93&_=1515203386828
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `market_comments` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`user_id`,`content` FROM `market_comments` WHERE `goods_id` = 93 LIMIT 0,10   [ RunTime:0.0007s ]
+NOTIC: [2] Invalid argument supplied for foreach() /usr/share/nginx/html/market/Application/Home/Controller/CommentsController.class.php 第 27 行.
+
+[ 2018-01-06T09:50:18+08:00 ] 106.120.206.132 /market/index.php/home/car/addCar?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`nums`,`car_id` FROM `market_car` WHERE `goods_id` = 93 AND `car_id` = 37  [ RunTime:0.0008s ]
+SQL: INSERT INTO `market_car` (`goods_id`,`car_id`,`nums`) VALUES ('93','37','1') [ RunTime:0.0238s ]
+
+[ 2018-01-06T09:50:23+08:00 ] 106.120.206.132 /market/index.php/home/car/viewCar?carId=37&_=1515203400334
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`car_id`,`goods_id`,`nums` FROM `market_car` WHERE `car_id` = '37' LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 6  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 5  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 73  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 4  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 77  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 1  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 93  [ RunTime:0.0007s ]
+
+[ 2018-01-06T10:18:01+08:00 ] 106.120.206.180 /market/index.php/home/goods/searchGoods?title=iphone&pn=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `title` LIKE '%iphone%' LIMIT 0,10   [ RunTime:0.0009s ]
+
+[ 2018-01-06T10:18:13+08:00 ] 106.120.206.180 //market/index.php/home/goods/getgoods?goodId=81&_=1515205091162
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `id` = 81 LIMIT 0,10   [ RunTime:0.0009s ]
+
+[ 2018-01-06T10:18:13+08:00 ] 106.120.206.180 /market/index.php/home/comments/viewcomments?goodsId=81&_=1515205091163
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+SQL: SHOW COLUMNS FROM `market_comments` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`user_id`,`content` FROM `market_comments` WHERE `goods_id` = 81 LIMIT 0,10   [ RunTime:0.0007s ]
+NOTIC: [2] Invalid argument supplied for foreach() /usr/share/nginx/html/market/Application/Home/Controller/CommentsController.class.php 第 27 行.
+
+[ 2018-01-06T10:18:21+08:00 ] 106.120.206.180 /market/index.php/Home/User/login?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0012s ]
+SQL: SELECT `user_id`,`name`,`password`,`vol`,`is_sale` FROM `market_user` WHERE `name` = 'root' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [2] current() expects parameter 1 to be array, null given /usr/share/nginx/html/market/Application/Home/Controller/UserController.class.php 第 80 行.
+
+[ 2018-01-06T10:18:32+08:00 ] 106.120.206.180 /market/index.php/Home/User/login?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0012s ]
+SQL: SELECT `user_id`,`name`,`password`,`vol`,`is_sale` FROM `market_user` WHERE `name` = '123' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-01-06T10:18:55+08:00 ] 106.120.206.180 /market/index.php/home/goods/searchGoods?type=%E8%A1%A3&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '衣' LIMIT 0,10   [ RunTime:0.0007s ]
+
+[ 2018-01-06T10:18:59+08:00 ] 106.120.206.180 /market/index.php/home/comments/viewcomments?goodsId=96&_=1515205139573
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+SQL: SHOW COLUMNS FROM `market_comments` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`user_id`,`content` FROM `market_comments` WHERE `goods_id` = 96 LIMIT 0,10   [ RunTime:0.0007s ]
+NOTIC: [2] Invalid argument supplied for foreach() /usr/share/nginx/html/market/Application/Home/Controller/CommentsController.class.php 第 27 行.
+
+[ 2018-01-06T10:18:59+08:00 ] 106.120.206.180 //market/index.php/home/goods/getgoods?goodId=96&_=1515205139572
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000054s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `id` = 96 LIMIT 0,10   [ RunTime:0.0007s ]
+
+[ 2018-01-06T10:19:05+08:00 ] 106.120.206.180 /market/index.php/home/car/addCar?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`nums`,`car_id` FROM `market_car` WHERE `goods_id` = 96 AND `car_id` = 37  [ RunTime:0.0010s ]
+SQL: INSERT INTO `market_car` (`goods_id`,`car_id`,`nums`) VALUES ('96','37','1') [ RunTime:0.0395s ]
+
+[ 2018-01-06T10:19:25+08:00 ] 106.120.206.180 /market/index.php/home/car/viewCar?carId=37&_=1515205158591
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`car_id`,`goods_id`,`nums` FROM `market_car` WHERE `car_id` = '37' LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 6  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 5  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 73  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 4  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 77  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 1  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 93  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 96  [ RunTime:0.0009s ]
+
+[ 2018-01-06T10:20:15+08:00 ] 106.120.206.180 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = 'xfr' LIMIT 1   [ RunTime:0.0007s ]
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+
+[ 2018-01-06T10:20:17+08:00 ] 106.120.206.180 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = 'xfr' LIMIT 1   [ RunTime:0.0007s ]
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+
+[ 2018-01-06T10:20:19+08:00 ] 106.120.206.180 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = 'xfr' LIMIT 1   [ RunTime:0.0008s ]
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+
+[ 2018-01-06T10:20:24+08:00 ] 106.120.206.180 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = 'xfr' LIMIT 1   [ RunTime:0.0007s ]
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+
+[ 2018-01-06T10:20:25+08:00 ] 106.120.206.180 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = 'xfr' LIMIT 1   [ RunTime:0.0007s ]
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+
+[ 2018-01-06T10:20:27+08:00 ] 106.120.206.180 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = 'xfr' LIMIT 1   [ RunTime:0.0008s ]
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+
+[ 2018-01-06T10:20:30+08:00 ] 106.120.206.180 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = 'xfr' LIMIT 1   [ RunTime:0.0007s ]
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+
+[ 2018-01-06T10:20:32+08:00 ] 106.120.206.180 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = 'xfr' LIMIT 1   [ RunTime:0.0007s ]
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+
+[ 2018-01-06T10:20:32+08:00 ] 106.120.206.180 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = 'xfr' LIMIT 1   [ RunTime:0.0008s ]
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+
+[ 2018-01-06T10:20:33+08:00 ] 106.120.206.180 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = 'xfr' LIMIT 1   [ RunTime:0.0007s ]
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+
+[ 2018-01-06T10:20:34+08:00 ] 106.120.206.180 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = 'xfr' LIMIT 1   [ RunTime:0.0008s ]
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+
+[ 2018-01-06T10:20:38+08:00 ] 106.120.206.180 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = 'xfr' LIMIT 1   [ RunTime:0.0009s ]
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+
+[ 2018-01-06T10:21:33+08:00 ] 106.120.206.180 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = 'xfr' LIMIT 1   [ RunTime:0.0009s ]
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+
+[ 2018-01-06T10:21:56+08:00 ] 106.120.206.180 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = 'xfr' LIMIT 1   [ RunTime:0.0007s ]
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+
+[ 2018-01-06T10:21:57+08:00 ] 106.120.206.180 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = 'xfr' LIMIT 1   [ RunTime:0.0007s ]
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+
+[ 2018-01-06T10:21:58+08:00 ] 106.120.206.180 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = 'xfr' LIMIT 1   [ RunTime:0.0009s ]
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfr','52d8d5f634814a99828c9416d4e94316')
+
+[ 2018-01-06T10:22:14+08:00 ] 106.120.206.180 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = '1234' LIMIT 1   [ RunTime:0.0008s ]
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('1234','81dc9bdb52d04dc20036dbd8313ed055')
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('1234','81dc9bdb52d04dc20036dbd8313ed055')
+
+[ 2018-01-06T10:22:15+08:00 ] 106.120.206.180 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = '1234' LIMIT 1   [ RunTime:0.0007s ]
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('1234','81dc9bdb52d04dc20036dbd8313ed055')
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('1234','81dc9bdb52d04dc20036dbd8313ed055')
+
+[ 2018-01-06T10:23:19+08:00 ] 106.120.206.137 /market/index.php/home/goods/searchGoods?type=%E5%AE%B6&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000118s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '家' LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-06T10:23:33+08:00 ] 106.120.206.137 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = 'xfs' LIMIT 1   [ RunTime:0.0012s ]
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfs','310201b6353c5f38bc039e0e51b079d3')
+ERR: 1364:Field 'email' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('xfs','310201b6353c5f38bc039e0e51b079d3')
+
+[ 2018-01-06T10:25:30+08:00 ] 106.120.206.137 /market/index.php/Home/User/login?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0015s ]
+SQL: SELECT `user_id`,`name`,`password`,`vol`,`is_sale` FROM `market_user` WHERE `name` = '123' LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2018-01-06T10:25:47+08:00 ] 106.120.206.137 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = '6' LIMIT 1   [ RunTime:0.0007s ]
+ERR: 1364:Field 'money' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`,`is_sale`,`email`) VALUES ('6','1679091c5a880faf6fb5e6087eb1b2dc','1','6')
+ERR: 1364:Field 'money' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`,`is_sale`,`email`) VALUES ('6','1679091c5a880faf6fb5e6087eb1b2dc','1','6')
+
+[ 2018-01-06T10:26:03+08:00 ] 106.120.206.180 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = '1234' LIMIT 1   [ RunTime:0.0007s ]
+ERR: 1364:Field 'money' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('1234','81dc9bdb52d04dc20036dbd8313ed055')
+ERR: 1364:Field 'money' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('1234','81dc9bdb52d04dc20036dbd8313ed055')
+
+[ 2018-01-06T10:26:04+08:00 ] 106.120.206.180 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = '1234' LIMIT 1   [ RunTime:0.0008s ]
+ERR: 1364:Field 'money' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('1234','81dc9bdb52d04dc20036dbd8313ed055')
+ERR: 1364:Field 'money' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('1234','81dc9bdb52d04dc20036dbd8313ed055')
+
+[ 2018-01-06T10:26:28+08:00 ] 106.120.206.147 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = 'ggg' LIMIT 1   [ RunTime:0.0007s ]
+ERR: 1364:Field 'money' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('ggg','ba248c985ace94863880921d8900c53f')
+ERR: 1364:Field 'money' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('ggg','ba248c985ace94863880921d8900c53f')
+
+[ 2018-01-06T10:26:30+08:00 ] 106.120.206.147 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = 'ggg' LIMIT 1   [ RunTime:0.0008s ]
+ERR: 1364:Field 'money' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('ggg','ba248c985ace94863880921d8900c53f')
+ERR: 1364:Field 'money' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('ggg','ba248c985ace94863880921d8900c53f')
+
+[ 2018-01-06T10:26:31+08:00 ] 106.120.206.147 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = 'ggg' LIMIT 1   [ RunTime:0.0009s ]
+ERR: 1364:Field 'money' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('ggg','ba248c985ace94863880921d8900c53f')
+ERR: 1364:Field 'money' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('ggg','ba248c985ace94863880921d8900c53f')
+
+[ 2018-01-06T10:26:31+08:00 ] 106.120.206.147 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = 'ggg' LIMIT 1   [ RunTime:0.0008s ]
+ERR: 1364:Field 'money' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('ggg','ba248c985ace94863880921d8900c53f')
+ERR: 1364:Field 'money' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('ggg','ba248c985ace94863880921d8900c53f')
+
+[ 2018-01-06T10:26:48+08:00 ] 106.120.206.147 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = 'ggg' LIMIT 1   [ RunTime:0.0007s ]
+ERR: 1364:Field 'money' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('ggg','ba248c985ace94863880921d8900c53f')
+ERR: 1364:Field 'money' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('ggg','ba248c985ace94863880921d8900c53f')
+
+[ 2018-01-06T10:26:52+08:00 ] 106.120.206.137 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = '123' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-01-06T10:27:06+08:00 ] 106.120.206.137 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = '1234' LIMIT 1   [ RunTime:0.0008s ]
+ERR: 1364:Field 'money' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('1234','81dc9bdb52d04dc20036dbd8313ed055')
+ERR: 1364:Field 'money' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES ('1234','81dc9bdb52d04dc20036dbd8313ed055')
+
+[ 2018-01-06T10:27:12+08:00 ] 106.120.206.147 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = 'ggg' LIMIT 1   [ RunTime:0.0008s ]
+SQL: INSERT INTO `market_user` (`name`,`password`) VALUES ('ggg','ba248c985ace94863880921d8900c53f') [ RunTime:0.0169s ]
+
+[ 2018-01-06T10:27:53+08:00 ] 106.120.206.137 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = '1234' LIMIT 1   [ RunTime:0.0007s ]
+SQL: INSERT INTO `market_user` (`name`,`password`) VALUES ('1234','202cb962ac59075b964b07152d234b70') [ RunTime:0.0158s ]
+
+[ 2018-01-06T10:27:58+08:00 ] 106.120.206.137 /market/index.php/Home/User/login?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0013s ]
+SQL: SELECT `user_id`,`name`,`password`,`vol`,`is_sale` FROM `market_user` WHERE `name` = '1234' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-01-06T10:30:30+08:00 ] 106.120.206.137 /market/index.php/home/goods/searchGoods?type=%E8%A1%A3&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '衣' LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-06T10:30:33+08:00 ] 106.120.206.137 /market/index.php/home/goods/searchGoods?type=%E7%94%B5&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '电' LIMIT 0,10   [ RunTime:0.0009s ]
+
+[ 2018-01-06T10:30:33+08:00 ] 106.120.206.137 /market/index.php/home/goods/searchGoods?type=%E5%AE%B6&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '家' LIMIT 0,10   [ RunTime:0.0011s ]
+
+[ 2018-01-06T10:30:36+08:00 ] 106.120.206.137 /market/index.php/home/goods/searchGoods?title=&pn=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` LIMIT 0,10   [ RunTime:0.0009s ]
+
+[ 2018-01-06T10:30:38+08:00 ] 106.120.206.137 //market/index.php/home/goods/getgoods?goodId=81&_=1515205815696
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `id` = 81 LIMIT 0,10   [ RunTime:0.0007s ]
+
+[ 2018-01-06T10:30:40+08:00 ] 106.120.206.137 /market/index.php/home/comments/viewcomments?goodsId=81&_=1515205815697
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+SQL: SHOW COLUMNS FROM `market_comments` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`user_id`,`content` FROM `market_comments` WHERE `goods_id` = 81 LIMIT 0,10   [ RunTime:0.0007s ]
+NOTIC: [2] Invalid argument supplied for foreach() /usr/share/nginx/html/market/Application/Home/Controller/CommentsController.class.php 第 27 行.
+
+[ 2018-01-06T10:30:46+08:00 ] 106.120.206.137 /market/index.php/home/goods/searchGoods?title=&pn=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-06T10:30:48+08:00 ] 106.120.206.137 //market/index.php/home/goods/getgoods?goodId=93&_=1515205825273
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `id` = 93 LIMIT 0,10   [ RunTime:0.0015s ]
+
+[ 2018-01-06T10:30:48+08:00 ] 106.120.206.137 /market/index.php/home/comments/viewcomments?goodsId=93&_=1515205825274
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+SQL: SHOW COLUMNS FROM `market_comments` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`user_id`,`content` FROM `market_comments` WHERE `goods_id` = 93 LIMIT 0,10   [ RunTime:0.0008s ]
+NOTIC: [2] Invalid argument supplied for foreach() /usr/share/nginx/html/market/Application/Home/Controller/CommentsController.class.php 第 27 行.
+
+[ 2018-01-06T10:30:53+08:00 ] 106.120.206.137 /market/index.php/home/car/addCar?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`nums`,`car_id` FROM `market_car` WHERE `goods_id` = 93 AND `car_id` = 52  [ RunTime:0.0009s ]
+SQL: INSERT INTO `market_car` (`goods_id`,`car_id`,`nums`) VALUES ('93','52','1') [ RunTime:0.0427s ]
+
+[ 2018-01-06T10:30:57+08:00 ] 106.120.206.137 /market/index.php/home/car/viewCar?carId=52&_=1515205834519
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`car_id`,`goods_id`,`nums` FROM `market_car` WHERE `car_id` = '52' LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 93  [ RunTime:0.0007s ]
+
+[ 2018-01-06T10:33:54+08:00 ] 106.120.206.137 /market/index.php/home/goods/searchGoods?title=&pn=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-06T10:34:01+08:00 ] 106.120.206.137 /market/index.php/home/goods/searchGoods?title=lv&pn=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `title` LIKE '%lv%' LIMIT 0,10   [ RunTime:0.0009s ]
+
+[ 2018-01-06T10:34:14+08:00 ] 106.120.206.137 /market/index.php/home/goods/searchGoods?title=%E7%9A%AE%E5%8C%85&pn=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `title` LIKE '%皮包%' LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2018-01-06T10:34:18+08:00 ] 106.120.206.137 /market/index.php/home/goods/searchGoods?title=%E5%8C%85&pn=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `title` LIKE '%包%' LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-06T10:38:30+08:00 ] 106.120.206.137 /market/index.php/Home/User/login?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000129s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0013s ]
+SQL: SELECT `user_id`,`name`,`password`,`vol`,`is_sale` FROM `market_user` WHERE `name` = '123' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-01-06T10:38:42+08:00 ] 106.120.206.137 /market/index.php/Home/User/login?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0014s ]
+SQL: SELECT `user_id`,`name`,`password`,`vol`,`is_sale` FROM `market_user` WHERE `name` = '222' LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [2] current() expects parameter 1 to be array, null given /usr/share/nginx/html/market/Application/Home/Controller/UserController.class.php 第 80 行.
+
+[ 2018-01-06T10:39:08+08:00 ] 106.120.206.137 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = '123' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-01-06T10:39:19+08:00 ] 106.120.206.137 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = 'roo5' LIMIT 1   [ RunTime:0.0008s ]
+SQL: INSERT INTO `market_user` (`name`,`password`) VALUES ('roo5','202cb962ac59075b964b07152d234b70') [ RunTime:0.0414s ]
+
+[ 2018-01-06T10:39:30+08:00 ] 106.120.206.137 /market/index.php/Home/User/login?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0013s ]
+SQL: SELECT `user_id`,`name`,`password`,`vol`,`is_sale` FROM `market_user` WHERE `name` = 'roo5' LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2018-01-06T10:39:44+08:00 ] 106.120.206.137 /market/index.php/home/goods/searchGoods?title=%E5%8C%85&pn=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `title` LIKE '%包%' LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-06T10:39:46+08:00 ] 106.120.206.137 //market/index.php/home/goods/getgoods?goodId=95&_=1515206363465
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `id` = 95 LIMIT 0,10   [ RunTime:0.0007s ]
+
+[ 2018-01-06T10:39:46+08:00 ] 106.120.206.137 /market/index.php/home/comments/viewcomments?goodsId=95&_=1515206363466
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+SQL: SHOW COLUMNS FROM `market_comments` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`user_id`,`content` FROM `market_comments` WHERE `goods_id` = 95 LIMIT 0,10   [ RunTime:0.0007s ]
+NOTIC: [2] Invalid argument supplied for foreach() /usr/share/nginx/html/market/Application/Home/Controller/CommentsController.class.php 第 27 行.
+
+[ 2018-01-06T10:39:52+08:00 ] 106.120.206.137 /market/index.php/home/car/addCar?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`nums`,`car_id` FROM `market_car` WHERE `goods_id` = 95 AND `car_id` = 53  [ RunTime:0.0010s ]
+SQL: INSERT INTO `market_car` (`goods_id`,`car_id`,`nums`) VALUES ('95','53','1') [ RunTime:0.0260s ]
+
+[ 2018-01-06T10:39:54+08:00 ] 106.120.206.137 /market/index.php/home/car/viewCar?carId=53&_=1515206371776
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`car_id`,`goods_id`,`nums` FROM `market_car` WHERE `car_id` = '53' LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 95  [ RunTime:0.0006s ]
+
+[ 2018-01-06T10:40:09+08:00 ] 106.120.206.137 /market/index.php/home/car/purchase?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `market_car` WHERE `id` = 58  [ RunTime:0.0007s ]
+SQL: UPDATE `market_goods` SET `overplus`=overplus-1 WHERE `id` = 95 [ RunTime:0.0114s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 95  [ RunTime:0.0007s ]
+SQL: UPDATE `market_user` SET `money`=money+2000 WHERE `user_id` = 48 [ RunTime:0.0006s ]
+ERR: 1690:BIGINT UNSIGNED value is out of range in '(`market`.`market_user`.`money` - 2000)'
+ [ SQL语句 ] : UPDATE `market_user` SET `money`=money-2000 WHERE `user_id` = 53
+ERR: 1690:BIGINT UNSIGNED value is out of range in '(`market`.`market_user`.`money` - 2000)'
+ [ SQL语句 ] : UPDATE `market_user` SET `money`=money-2000 WHERE `user_id` = 53
+
+[ 2018-01-06T10:40:20+08:00 ] 106.120.206.137 /market/index.php/Home/User/login?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0014s ]
+SQL: SELECT `user_id`,`name`,`password`,`vol`,`is_sale` FROM `market_user` WHERE `name` = 'cz' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-01-06T10:40:24+08:00 ] 106.120.206.137 /market/index.php/home/car/viewCar?carId=44&_=1515206400938
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`car_id`,`goods_id`,`nums` FROM `market_car` WHERE `car_id` = '44' LIMIT 0,10   [ RunTime:0.0010s ]
+NOTIC: [2] Invalid argument supplied for foreach() /usr/share/nginx/html/market/Application/Home/Controller/CarController.class.php 第 26 行.
+
+[ 2018-01-06T10:40:33+08:00 ] 106.120.206.137 /market/index.php/home/goods/searchGoods?title=%E5%8C%85&pn=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `title` LIKE '%包%' LIMIT 0,10   [ RunTime:0.0009s ]
+
+[ 2018-01-06T10:40:35+08:00 ] 106.120.206.137 //market/index.php/home/goods/getgoods?goodId=96&_=1515206412652
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `id` = 96 LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-06T10:40:35+08:00 ] 106.120.206.137 /market/index.php/home/comments/viewcomments?goodsId=96&_=1515206412653
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+SQL: SHOW COLUMNS FROM `market_comments` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`user_id`,`content` FROM `market_comments` WHERE `goods_id` = 96 LIMIT 0,10   [ RunTime:0.0007s ]
+NOTIC: [2] Invalid argument supplied for foreach() /usr/share/nginx/html/market/Application/Home/Controller/CommentsController.class.php 第 27 行.
+
+[ 2018-01-06T10:40:39+08:00 ] 106.120.206.137 /market/index.php/home/car/addCar?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`nums`,`car_id` FROM `market_car` WHERE `goods_id` = 96 AND `car_id` = 44  [ RunTime:0.0007s ]
+SQL: INSERT INTO `market_car` (`goods_id`,`car_id`,`nums`) VALUES ('96','44','1') [ RunTime:0.0147s ]
+
+[ 2018-01-06T10:40:41+08:00 ] 106.120.206.137 /market/index.php/home/car/viewCar?carId=44&_=1515206418626
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`car_id`,`goods_id`,`nums` FROM `market_car` WHERE `car_id` = '44' LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 96  [ RunTime:0.0007s ]
+
+[ 2018-01-06T10:40:44+08:00 ] 106.120.206.137 /market/index.php/home/car/purchase?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `market_car` WHERE `id` = 59  [ RunTime:0.0007s ]
+SQL: UPDATE `market_goods` SET `overplus`=overplus-1 WHERE `id` = 96 [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 96  [ RunTime:0.0009s ]
+SQL: UPDATE `market_user` SET `money`=money+10000 WHERE `user_id` = 48 [ RunTime:0.0007s ]
+ERR: 1690:BIGINT UNSIGNED value is out of range in '(`market`.`market_user`.`money` - 10000)'
+ [ SQL语句 ] : UPDATE `market_user` SET `money`=money-10000 WHERE `user_id` = 44
+ERR: 1690:BIGINT UNSIGNED value is out of range in '(`market`.`market_user`.`money` - 10000)'
+ [ SQL语句 ] : UPDATE `market_user` SET `money`=money-10000 WHERE `user_id` = 44
+
+[ 2018-01-06T10:40:49+08:00 ] 106.120.206.137 /market/index.php/home/car/viewCar?carId=44&_=1515206426292
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`car_id`,`goods_id`,`nums` FROM `market_car` WHERE `car_id` = '44' LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 96  [ RunTime:0.0006s ]
+
+[ 2018-01-06T10:41:11+08:00 ] 106.120.206.137 /market/index.php/home/goods/searchGoods?type=%E8%A1%A3&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '衣' LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-06T10:41:13+08:00 ] 106.120.206.137 /market/index.php/home/comments/viewcomments?goodsId=80&_=1515206450657
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000138s ]
+SQL: SHOW COLUMNS FROM `market_comments` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`user_id`,`content` FROM `market_comments` WHERE `goods_id` = 80 LIMIT 0,10   [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `market_user` WHERE `user_id` = 44 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-01-06T10:41:13+08:00 ] 106.120.206.137 //market/index.php/home/goods/getgoods?goodId=80&_=1515206450656
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003143s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `id` = 80 LIMIT 0,10   [ RunTime:0.0009s ]
+
+[ 2018-01-06T10:41:17+08:00 ] 106.120.206.137 /market/index.php/home/car/addCar?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`nums`,`car_id` FROM `market_car` WHERE `goods_id` = 80 AND `car_id` = 44  [ RunTime:0.0007s ]
+SQL: INSERT INTO `market_car` (`goods_id`,`car_id`,`nums`) VALUES ('80','44','1') [ RunTime:0.0549s ]
+
+[ 2018-01-06T10:41:22+08:00 ] 106.120.206.137 /market/index.php/home/car/viewCar?carId=44&_=1515206459097
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`car_id`,`goods_id`,`nums` FROM `market_car` WHERE `car_id` = '44' LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 96  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 80  [ RunTime:0.0007s ]
+
+[ 2018-01-06T10:41:24+08:00 ] 106.120.206.137 /market/index.php/home/car/purchase?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `market_car` WHERE `id` = 60  [ RunTime:0.0008s ]
+SQL: UPDATE `market_goods` SET `overplus`=overplus-1 WHERE `id` = 80 [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 80  [ RunTime:0.0007s ]
+SQL: UPDATE `market_user` SET `money`=money+100 WHERE `user_id` = 44 [ RunTime:0.0007s ]
+SQL: UPDATE `market_user` SET `money`=money-100 WHERE `user_id` = 44 [ RunTime:0.0007s ]
+SQL: UPDATE `market_user` SET `vol`=vol+1 WHERE `user_id` = 44 [ RunTime:0.0007s ]
+SQL: UPDATE `market_user` SET `vol`=vol+1 WHERE `user_id` = 44 [ RunTime:0.0007s ]
+SQL: DELETE FROM `market_car` WHERE `id` = 60 [ RunTime:0.0007s ]
+
+[ 2018-01-06T10:41:27+08:00 ] 106.120.206.137 /market/index.php/home/car/viewCar?carId=44&_=1515206464588
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`car_id`,`goods_id`,`nums` FROM `market_car` WHERE `car_id` = '44' LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 96  [ RunTime:0.0007s ]
+
+[ 2018-01-06T10:41:39+08:00 ] 106.120.206.137 /market/index.php/home/goods/viewGoods?user_id=44&_=1515206476002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `user_id` = 44 LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-06T10:42:05+08:00 ] 106.120.206.137 /market/index.php/home/goods/searchGoods?title=%E5%8C%85&pn=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `title` LIKE '%包%' LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-06T10:42:08+08:00 ] 106.120.206.137 //market/index.php/home/goods/getgoods?goodId=96&_=1515206504760
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `id` = 96 LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-06T10:42:08+08:00 ] 106.120.206.137 /market/index.php/home/comments/viewcomments?goodsId=96&_=1515206504761
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+SQL: SHOW COLUMNS FROM `market_comments` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`user_id`,`content` FROM `market_comments` WHERE `goods_id` = 96 LIMIT 0,10   [ RunTime:0.0008s ]
+NOTIC: [2] Invalid argument supplied for foreach() /usr/share/nginx/html/market/Application/Home/Controller/CommentsController.class.php 第 27 行.
+
+[ 2018-01-06T10:42:13+08:00 ] 106.120.206.137 /market/index.php/home/comments/addComments?goodsId=96
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `market_comments` [ RunTime:0.0015s ]
+SQL: INSERT INTO `market_comments` (`goods_id`,`user_id`,`content`) VALUES ('96','44','哈哈哈哈') [ RunTime:0.0444s ]
+
+[ 2018-01-06T10:42:13+08:00 ] 106.120.206.137 /market/index.php/home/comments/viewcomments?goodsId=96&_=1515206504762
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `market_comments` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`user_id`,`content` FROM `market_comments` WHERE `goods_id` = 96 LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `market_user` WHERE `user_id` = 44 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2018-01-06T10:42:36+08:00 ] 106.120.206.137 /market/index.php/home/car/viewCar?carId=44&_=1515206533239
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000243s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`car_id`,`goods_id`,`nums` FROM `market_car` WHERE `car_id` = '44' LIMIT 0,10   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 96  [ RunTime:0.0009s ]
+
+[ 2018-01-06T10:43:23+08:00 ] 106.120.206.137 /market/index.php/home/car/updateCar?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0015s ]
+SQL: UPDATE `market_car` SET `nums`='2' WHERE `id` = 59 [ RunTime:0.0189s ]
+
+[ 2018-01-06T10:43:28+08:00 ] 106.120.206.137 /market/index.php/home/car/updateCar?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0014s ]
+SQL: UPDATE `market_car` SET `nums`='2' WHERE `id` = 59 [ RunTime:0.0183s ]
+
+[ 2018-01-06T10:43:39+08:00 ] 106.120.206.137 /market/index.php/home/car/updateCar?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0012s ]
+SQL: UPDATE `market_car` SET `nums`='1' WHERE `id` = 59 [ RunTime:0.0196s ]
+
+[ 2018-01-06T10:43:43+08:00 ] 106.120.206.137 /market/index.php/home/car/updateCar?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0012s ]
+
+[ 2018-01-06T10:43:43+08:00 ] 106.120.206.137 /market/index.php/home/car/deleteCar?carId=59&_=1515206533240
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0013s ]
+SQL: DELETE FROM `market_car` WHERE `id` = 59 [ RunTime:0.0210s ]
+
+[ 2018-01-06T10:43:43+08:00 ] 106.120.206.137 /market/index.php/home/car/viewCar?carId=44&_=1515206533241
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000123s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`car_id`,`goods_id`,`nums` FROM `market_car` WHERE `car_id` = '44' LIMIT 0,10   [ RunTime:0.0008s ]
+NOTIC: [2] Invalid argument supplied for foreach() /usr/share/nginx/html/market/Application/Home/Controller/CarController.class.php 第 26 行.
+
+[ 2018-01-06T10:44:11+08:00 ] 106.120.206.137 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000170s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = 'h' LIMIT 1   [ RunTime:0.0009s ]
+SQL: INSERT INTO `market_user` (`name`,`password`,`is_sale`,`email`) VALUES ('h','a3aca2964e72000eea4c56cb341002a4','1','hhh@qq.com') [ RunTime:0.0377s ]
+
+[ 2018-01-06T10:44:20+08:00 ] 106.120.206.137 /market/index.php/Home/User/login?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0012s ]
+SQL: SELECT `user_id`,`name`,`password`,`vol`,`is_sale` FROM `market_user` WHERE `name` = 'h' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-01-06T10:44:23+08:00 ] 106.120.206.137 /market/index.php/home/goods/viewGoods?user_id=54&_=1515206640869
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `user_id` = 54 LIMIT 0,10   [ RunTime:0.0007s ]
+
+[ 2018-01-06T10:44:43+08:00 ] 106.120.206.137 /market/index.php/home/goods/searchGoods?type=%E8%A1%A3&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '衣' LIMIT 0,10   [ RunTime:0.0009s ]
+
+[ 2018-01-06T10:44:49+08:00 ] 106.120.206.137 /market/index.php/home/goods/searchGoods?type=%E8%A1%A3&pn=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '衣' LIMIT 10,10   [ RunTime:0.0007s ]
+
+[ 2018-01-06T10:44:49+08:00 ] 106.120.206.137 /market/index.php/home/goods/searchGoods?title=undefined&pn=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `title` LIKE '%undefined%' LIMIT 10,10   [ RunTime:0.0008s ]
+
+[ 2018-01-06T10:45:46+08:00 ] 106.120.206.137 /market/index.php/Home/User/login?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000153s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0016s ]
+SQL: SELECT `user_id`,`name`,`password`,`vol`,`is_sale` FROM `market_user` WHERE `name` = 'h' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-01-06T10:45:49+08:00 ] 106.120.206.137 /market/index.php/home/goods/viewGoods?user_id=54&_=1515206726696
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `user_id` = 54 LIMIT 0,10   [ RunTime:0.0007s ]
+
+[ 2018-01-06T10:45:55+08:00 ] 106.120.206.137 /market/index.php/home/goods/viewGoods?user_id=54&_=1515206732294
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `user_id` = 54 LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-06T10:46:24+08:00 ] 106.120.206.137 /market/index.php/Home/Goods/addGoods?userId=54
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0012s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /usr/share/nginx/html/market/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: INSERT INTO `market_goods` (`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img`) VALUES ('手机','200','10','一个手机','54','电','http://111.230.233.124/market/Uploads/2018-01-06/5a50388001dd7.jpg') [ RunTime:0.0387s ]
+
+[ 2018-01-06T10:46:25+08:00 ] 106.120.206.137 /market/index.php/home/goods/viewGoods?user_id=54&_=1515206761942
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `user_id` = 54 LIMIT 0,10   [ RunTime:0.0009s ]
+
+[ 2018-01-06T10:46:33+08:00 ] 106.120.206.137 /market/index.php/home/goods/searchGoods?title=%E6%89%8B%E6%9C%BA&pn=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `title` LIKE '%手机%' LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-06T10:46:35+08:00 ] 106.120.206.137 //market/index.php/home/goods/getgoods?goodId=99&_=1515206772622
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `id` = 99 LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-06T10:46:35+08:00 ] 106.120.206.137 /market/index.php/home/comments/viewcomments?goodsId=99&_=1515206772623
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000115s ]
+SQL: SHOW COLUMNS FROM `market_comments` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`user_id`,`content` FROM `market_comments` WHERE `goods_id` = 99 LIMIT 0,10   [ RunTime:0.0008s ]
+NOTIC: [2] Invalid argument supplied for foreach() /usr/share/nginx/html/market/Application/Home/Controller/CommentsController.class.php 第 27 行.
+
+[ 2018-01-06T12:38:05+08:00 ] 183.57.53.197 /market/index.php/Home/User/register
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000112s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = null LIMIT 1   [ RunTime:0.0007s ]
+ERR: 1048:Column 'name' cannot be null
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES (NULL,'d41d8cd98f00b204e9800998ecf8427e')
+ERR: 1048:Column 'name' cannot be null
+ [ SQL语句 ] : INSERT INTO `market_user` (`name`,`password`) VALUES (NULL,'d41d8cd98f00b204e9800998ecf8427e')
+
+[ 2018-01-06T13:15:25+08:00 ] 183.57.53.177 /market/index.php/home/comments/viewcomments?goodsId%3D93%26_%3D1515205825274
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL: SHOW COLUMNS FROM `market_comments` [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`user_id`,`content` FROM `market_comments` WHERE `goods_id` = 1 LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `market_user` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `market_user` WHERE `user_id` = 12 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `market_user` WHERE `user_id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `name` FROM `market_user` WHERE `user_id` = 0 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2018-01-06T13:24:42+08:00 ] 14.17.3.65 /market/index.php/home/goods/viewGoods?user_id%3D44%26_%3D1515206476002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `user_id` = 1 LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-06T13:24:42+08:00 ] 112.90.82.236 /market/index.php/home/car/purchase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000113s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0011s ]
+NOTIC: [2] Invalid argument supplied for foreach() /usr/share/nginx/html/market/Application/Home/Controller/CarController.class.php 第 152 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.048932s ]
+INFO: [ app_end ] --END-- [ RunTime:0.049015s ]
+

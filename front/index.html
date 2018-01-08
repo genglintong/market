@@ -1,0 +1,378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type"content="text/html; charset=utf-8"/>
+	<link type="text/css" rel="stylesheet" href="style/reset.css" >
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+	<title>首页</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+	    $(document).ready(function(){
+	        update();
+		});
+
+	    function update(){
+	    	console.log(sessionStorage.customerId)
+	    	if(sessionStorage.customerId == "undefined"){
+	    		document.getElementById("iflogin").innerHTML='<a href="login.html">登录</a><span class="sep">|</span><a href="register.html">注册买家</a><span class="sep">|</span><a href="registerseller.html">注册卖家</a>';
+	    	}
+	    	else if(sessionStorage.customerId !== undefined && sessionStorage.is_sale == 1){
+	    		document.getElementById("iflogin").innerHTML='<a href="index.html" onclick="logout()">注销</a><span class="sep">|</span><a href="jqgrid.html">我的小铺</a>';
+	    	}
+	    	else if(sessionStorage.customerId !== undefined){
+	    		document.getElementById("iflogin").innerHTML='<a href="index.html" onclick="logout()">注销</a>';
+	    	}
+	    	 
+	    }
+
+	    function logout(){
+	    	sessionStorage.customerId=undefined;
+	    	sessionStorage.is_sale=undefined;
+	    	update();
+	    	console.log(sessionStorage.customerId);
+	    	// alert("yes");
+	    }
+
+	    function shopcarjumpTo(p, url) { 
+	   		var customerId=sessionStorage.customerId; 
+	   		console.log(customerId)
+	   		if (customerId == undefined) { 
+	     		window.location.href="login.html";
+			} else { 
+	      		window.location.href="shopcar.html";
+	    	} 
+		} 
+	</script>
+	<div id="wrap">
+		<div id="header">
+			<div class="topbar">
+				<div class="comWidth2">
+					<ul class="leftArea">
+						<li>
+							<a href="index.html">玫瑰网：二手玫瑰，手有余香</a>
+						</li>
+						<li>
+							<span class="sep">|</span>
+						</li>
+						<li>
+							<a href="#">关于我们</a>
+						</li>
+						<li>
+							<span class="sep">|</span>
+						</li>
+						<li>
+							<a href="#">问题反馈</a>
+						</li>
+						
+					</ul>
+					<div class="rightArea">
+						<div class="login fl" id="iflogin">
+							<a href="login.html">登录</a>
+							<span class="sep">|</span>
+							<a href="register.html">注册买家</a>
+							<span class="sep">|</span>
+							<a href="registerseller.html">注册卖家</a>
+						</div>
+						<div class="buy_car fl">
+							<a onclick='shopcarjumpTo()'>
+								<img src="images/shopcar.png" class="buy_car_img fr" />
+							</a>
+							<div class="buy_car_spec">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="navMenu nav_menu_show3">
+			<div class="nav_menu_list">
+				<ul class="nav_menu_spec">
+					<li>
+						<a href="#" class="nav_menu_list_img">
+							<img src="images/LV2.jpg" />
+						</a>
+						<p>
+							<a href="#" class="nav_menu_list_title">LV皮包</a>
+						</p>
+						<p>
+							<a href="#" class="nav_menu_list_price">10299元</a>
+						</p>
+					</li>
+					<li>
+						<a href="#" class="nav_menu_list_img">
+							<img src="images/LV3.jpg" />
+						</a>
+						<p>
+							<a href="#" class="nav_menu_list_title">LV时尚手袋</a>
+						</p>
+						<p>
+							<a href="#" class="nav_menu_list_price">12990元</a>
+						</p>
+					</li>
+					<li>
+						<a href="#" class="nav_menu_list_img">
+							<img src="images/LV4.jpg" />
+						</a>
+						<p>
+							<a href="#" class="nav_menu_list_title">针织衫</a>
+						</p>
+						<p>
+							<a href="#" class="nav_menu_list_price">2099元</a>
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="navMenu nav_menu_show4">
+			<div class="nav_menu_list">
+				<ul class="nav_menu_spec">
+					<li>
+						<a href="#" class="nav_menu_list_img">
+							<img src="images/nav_menu3_1.jpg" />
+						</a>
+						<p>
+							<a href="#" class="nav_menu_list_title">小米手机4c</a>
+						</p>
+						<p>
+							<a href="#" class="nav_menu_list_price">299元</a>
+						</p>
+					</li>
+					<li>
+						<a href="#" class="nav_menu_list_img">
+							<img src="images/nav_menu4_2.jpg" />
+						</a>
+						<p>
+							<a href="#" class="nav_menu_list_title">显示屏</a>
+						</p>
+						<p>
+							<a href="#" class="nav_menu_list_price">500元</a>
+						</p>
+					</li>
+					<li>
+						<a href="#" class="nav_menu_list_img">
+							<img src="images/nav_menu4_3.jpg" />
+						</a>
+						<p>
+							<a href="#" class="nav_menu_list_title">松下电视</a>
+						</p>
+						<p>
+							<a href="#" class="nav_menu_list_price">998元</a>
+						</p>
+					</li>
+					<li>
+						<a href="#" class="bdr_0 nav_menu_list_img ">
+							<img src="images/nav_menu4_4.jpg" />
+						</a>
+						<p>
+							<a href="#" class="nav_menu_list_title">联想电脑</a>
+						</p>
+						<p>
+							<a href="#" class="nav_menu_list_price">1299元</a>
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="navMenu nav_menu_show5">
+			<div class="nav_menu_list">
+				<ul class="nav_menu_spec">
+					<li>
+						<a href="#" class="nav_menu_list_img">
+							<img src="images/fur1.jpg" />
+						</a>
+						<p>
+							<a href="#" class="nav_menu_list_title">椅子</a>
+						</p>
+						<p>
+							<a href="#" class="nav_menu_list_price">50元</a>
+						</p>
+					</li>
+					<li>
+						<a href="#" class="nav_menu_list_img">
+							<img src="images/fur2.png" />
+						</a>
+						<p>
+							<a href="#" class="nav_menu_list_title">单人沙发</a>
+						</p>
+						<p>
+							<a href="#" class="nav_menu_list_price">60元</a>
+						</p>
+					</li>
+					<li>
+						<a href="#" class="bdr_0 nav_menu_list_img ">
+							<img src="images/fur3.jpg" />
+						</a>
+						<p>
+							<a href="#" class="nav_menu_list_title">长沙发</a>
+						</p>
+						<p>
+							<a href="#" class="nav_menu_list_price">99元</a>
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="wrap_inner_top">
+			<div class="container comWidth clearfix">
+				<div class="nav clearfix">
+					<div class="logo fl"></div>
+					<ul class="nav_list clearfix fl">
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="search.html">搜索</a>
+						</li>
+						<li>
+							<a href="subClothes.html">服装</a>
+						</li>
+						<li>
+							<a href="subElectro.html">电子设备</a>
+						</li>
+						<li>
+							<a href="subFurniture.html">家具</a>
+						</li>
+					</ul>
+
+				</div>
+
+				<div class="category clearfix">
+
+					
+					<ul class="category_hot_list">
+						<li>
+							<a href="#">
+								<img src="images/LV6.png" />
+							</a>
+						</li>
+						<li>
+							<a href="#" >
+								<img src="images/hot1.jpg" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/hot3.jpg" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/hot6.png" />
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/hot8.jpg" />
+							</a>
+						</li>
+					</ul>
+					<ul class="category_move">
+						<li>
+							<span class="cur_move"></span>
+						</li>
+						<li>
+							<span></span>
+						</li>
+						<li>
+							<span></span>
+						</li>
+						<li>
+							<span></span>
+						</li>
+						<li>
+							<span></span>
+						</li>
+					</ul>
+				</div>
+				<div class="channel comWidth clearfix">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div id="footer">
+	<div class="footer_top comWidth">
+		<div class="footer_top_service">
+			<ul>
+				<!-- <li>
+					<a href="#" class="footer_service1">1小时快修服务</a>
+				</li> -->
+				<li>
+					<a href="#" class="footer_service2">7天无理由退货</a>
+				</li>
+				<li>
+					<a href="#" class="footer_service3">15天免费换货</a>
+				</li>
+				<li>
+					<a href="#" class="footer_service4">满150元包邮</a>
+				</li>
+				<!-- <li>
+					<a href="#" class="footer_service5">520余家售后网点</a>
+				</li> -->
+			</ul>
+		</div>
+		<div class="footer_top_links comWidth">
+			<div class="fl">
+				<div class="links_service fl">
+					<h5 class="links_service_title">帮助中心</h5>
+					<ul class="links_service_content">
+						<li>
+							<a href="#">购物指南</a>
+						</li>
+						<li>
+							<a href="#">支付方式</a>
+						</li>
+						<li>
+							<a href="#">配送方式</a>
+						</li>
+					</ul>
+				</div>
+				<div class="links_service fl">
+					<h5 class="links_service_title">服务支持</h5>
+					<ul class="links_service_content">
+						<li>
+							<a href="#">售后政策</a>
+						</li>
+						<li>
+							<a href="#">自助服务</a>
+						</li>
+						<li>
+							<a href="#">相关下载</a>
+						</li>
+					</ul>
+				</div>
+				<div class="links_service fl">
+					<h5 class="links_service_title">关注我们</h5>
+					<ul class="links_service_content">
+						<li>
+							<a href="#">新浪微博</a>
+						</li>
+						<li>
+							<a href="#">Facebook</a>
+						</li>
+						<li>
+							<a href="#">官方微信</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="links_tel fr">
+				<h3 class="links_tel_num">010-1234-5678</h3>
+				<p class="links_tel_info">周一至周日 8:00-18:00</p>
+				<p class="links_tel_info">（仅收市话费）</p>
+				<img src="images/service.png" class="links_tel_img" />
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

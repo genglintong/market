@@ -1,0 +1,814 @@
+[ 2018-01-05T21:54:16+08:00 ] 106.120.206.170 /market/index.php/home/goods/searchGoods
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000074s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` LIMIT 0,10   [ RunTime:0.0007s ]
+
+[ 2018-01-05T22:02:30+08:00 ] 106.120.206.170 /market/index.php/home/goods/searchGoods?type=%E8%A1%A3&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '衣' LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-05T22:02:37+08:00 ] 106.120.206.170 /market/index.php/home/goods/searchGoods?type=%E7%94%B5&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '电' LIMIT 0,10   [ RunTime:0.0007s ]
+
+[ 2018-01-05T22:02:39+08:00 ] 106.120.206.170 /market/index.php/home/goods/searchGoods?type=%E5%AE%B6&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '家' LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-05T22:02:50+08:00 ] 106.120.206.170 /market/index.php/Home/User/login?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000146s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0013s ]
+SQL: SELECT `user_id`,`name`,`password`,`vol`,`is_sale` FROM `market_user` WHERE `name` = '123' LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2018-01-05T22:02:57+08:00 ] 106.120.206.170 /market/index.php/home/car/viewCar?carId=37&_=1515160976362
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000110s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`car_id`,`goods_id`,`nums` FROM `market_car` WHERE `car_id` = '37' LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 6  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 5  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 73  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 4  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 77  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 1  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 81  [ RunTime:0.0007s ]
+
+[ 2018-01-05T22:03:02+08:00 ] 106.120.206.170 /market/index.php/home/car/purchase?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `market_car` WHERE `id` = 51  [ RunTime:0.0008s ]
+SQL: UPDATE `market_goods` SET `overplus`=overplus-1 WHERE `id` = 81 [ RunTime:0.0240s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 81  [ RunTime:0.0009s ]
+SQL: UPDATE `market_user` SET `money`=money+4000 WHERE `user_id` = 44 [ RunTime:0.0199s ]
+ERR: 1264:Out of range value for column 'money' at row 1
+ [ SQL语句 ] : UPDATE `market_user` SET `money`=money-4000 WHERE `user_id` = 37
+ERR: 1264:Out of range value for column 'money' at row 1
+ [ SQL语句 ] : UPDATE `market_user` SET `money`=money-4000 WHERE `user_id` = 37
+
+[ 2018-01-05T22:03:04+08:00 ] 106.120.206.170 /market/index.php/home/car/purchase?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000137s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `market_car` WHERE `id` = 51  [ RunTime:0.0007s ]
+SQL: UPDATE `market_goods` SET `overplus`=overplus-1 WHERE `id` = 81 [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 81  [ RunTime:0.0007s ]
+SQL: UPDATE `market_user` SET `money`=money+4000 WHERE `user_id` = 44 [ RunTime:0.0152s ]
+ERR: 1264:Out of range value for column 'money' at row 1
+ [ SQL语句 ] : UPDATE `market_user` SET `money`=money-4000 WHERE `user_id` = 37
+ERR: 1264:Out of range value for column 'money' at row 1
+ [ SQL语句 ] : UPDATE `market_user` SET `money`=money-4000 WHERE `user_id` = 37
+
+[ 2018-01-05T22:03:51+08:00 ] 106.120.206.170 /market/index.php/home/car/purchase?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `market_car` WHERE `id` = 51  [ RunTime:0.0007s ]
+SQL: UPDATE `market_goods` SET `overplus`=overplus-1 WHERE `id` = 81 [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 81  [ RunTime:0.0007s ]
+SQL: UPDATE `market_user` SET `money`=money+4000 WHERE `user_id` = 44 [ RunTime:0.0006s ]
+SQL: UPDATE `market_user` SET `money`=money-4000 WHERE `user_id` = 37 [ RunTime:0.0008s ]
+SQL: UPDATE `market_user` SET `vol`=vol+1 WHERE `user_id` = 44 [ RunTime:0.0006s ]
+SQL: UPDATE `market_user` SET `vol`=vol+1 WHERE `user_id` = 37 [ RunTime:0.0006s ]
+SQL: DELETE FROM `market_car` WHERE `id` = 51 [ RunTime:0.0009s ]
+
+[ 2018-01-05T22:03:53+08:00 ] 106.120.206.170 /market/index.php/home/car/viewCar?carId=37&_=1515161034691
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`car_id`,`goods_id`,`nums` FROM `market_car` WHERE `car_id` = '37' LIMIT 0,10   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 6  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 5  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 73  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 4  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 77  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 1  [ RunTime:0.0007s ]
+
+[ 2018-01-05T22:05:00+08:00 ] 106.120.206.170 /market/index.php/home/goods/searchGoods?type=%E8%A1%A3&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '衣' LIMIT 0,10   [ RunTime:0.0017s ]
+
+[ 2018-01-05T22:05:03+08:00 ] 106.120.206.170 //market/index.php/home/goods/getgoods?goodId=83&_=1515161104388
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `id` = 83 LIMIT 0,10   [ RunTime:0.0007s ]
+
+[ 2018-01-05T22:05:03+08:00 ] 106.120.206.170 /market/index.php/home/comments/viewcomments?goodsId=83&_=1515161104389
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `market_comments` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`user_id`,`content` FROM `market_comments` WHERE `goods_id` = 83 LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `market_user` WHERE `user_id` = 47 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-01-05T22:05:09+08:00 ] 106.120.206.170 /market/index.php/home/car/addCar?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`nums`,`car_id` FROM `market_car` WHERE `goods_id` = 83 AND `car_id` = 37  [ RunTime:0.0008s ]
+SQL: INSERT INTO `market_car` (`goods_id`,`car_id`,`nums`) VALUES ('83','37','1') [ RunTime:0.0187s ]
+
+[ 2018-01-05T22:06:17+08:00 ] 106.120.206.170 /market/index.php/home/comments/addComments?goodsId=83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+SQL: SHOW COLUMNS FROM `market_comments` [ RunTime:0.0012s ]
+SQL: INSERT INTO `market_comments` (`goods_id`,`user_id`,`content`) VALUES ('83','37','您到底在卖什么？') [ RunTime:0.0132s ]
+
+[ 2018-01-05T22:06:17+08:00 ] 106.120.206.170 /market/index.php/home/comments/viewcomments?goodsId=83&_=1515161104390
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+SQL: SHOW COLUMNS FROM `market_comments` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`user_id`,`content` FROM `market_comments` WHERE `goods_id` = 83 LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `market_user` WHERE `user_id` = 47 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `market_user` WHERE `user_id` = 37 LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-01-05T22:06:32+08:00 ] 106.120.206.170 /market/index.php/home/comments/addComments?goodsId=83
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+SQL: SHOW COLUMNS FROM `market_comments` [ RunTime:0.0012s ]
+SQL: INSERT INTO `market_comments` (`goods_id`,`user_id`,`content`) VALUES ('83','37','哈哈撒上烤') [ RunTime:0.0245s ]
+
+[ 2018-01-05T22:06:32+08:00 ] 106.120.206.170 /market/index.php/home/comments/viewcomments?goodsId=83&_=1515161104391
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+SQL: SHOW COLUMNS FROM `market_comments` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`user_id`,`content` FROM `market_comments` WHERE `goods_id` = 83 LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `market_user` WHERE `user_id` = 47 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `market_user` WHERE `user_id` = 37 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `market_user` WHERE `user_id` = 37 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2018-01-05T22:06:42+08:00 ] 106.120.206.170 /market/index.php/home/goods/searchGoods?type=%E7%94%B5&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '电' LIMIT 0,10   [ RunTime:0.0007s ]
+
+[ 2018-01-05T22:06:43+08:00 ] 106.120.206.170 /market/index.php/home/goods/searchGoods?type=%E5%AE%B6&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '家' LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-05T22:06:44+08:00 ] 106.120.206.170 /market/index.php/home/goods/searchGoods?type=%E7%94%B5&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000111s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '电' LIMIT 0,10   [ RunTime:0.0007s ]
+
+[ 2018-01-05T22:06:46+08:00 ] 106.120.206.170 /market/index.php/home/goods/searchGoods?type=%E8%A1%A3&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '衣' LIMIT 0,10   [ RunTime:0.0007s ]
+
+[ 2018-01-05T22:06:48+08:00 ] 106.120.206.170 //market/index.php/home/goods/getgoods?goodId=80&_=1515161209560
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `id` = 80 LIMIT 0,10   [ RunTime:0.0007s ]
+
+[ 2018-01-05T22:06:48+08:00 ] 106.120.206.170 /market/index.php/home/comments/viewcomments?goodsId=80&_=1515161209561
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL: SHOW COLUMNS FROM `market_comments` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`user_id`,`content` FROM `market_comments` WHERE `goods_id` = 80 LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `market_user` WHERE `user_id` = 44 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2018-01-05T22:07:15+08:00 ] 106.120.206.170 /market/index.php/home/goods/searchGoods?type=%E7%94%B5&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '电' LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-05T22:07:16+08:00 ] 106.120.206.170 /market/index.php/home/goods/searchGoods?type=%E5%AE%B6&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000143s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '家' LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-05T22:07:17+08:00 ] 106.120.206.170 /market/index.php/home/car/viewCar?carId=37&_=1515161238820
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`car_id`,`goods_id`,`nums` FROM `market_car` WHERE `car_id` = '37' LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 6  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 5  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 73  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 4  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 77  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 1  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 83  [ RunTime:0.0007s ]
+
+[ 2018-01-05T22:07:26+08:00 ] 106.120.206.170 /market/index.php/home/goods/searchGoods?type=%E5%AE%B6&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000135s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '家' LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2018-01-05T22:07:28+08:00 ] 106.120.206.170 /market/index.php/home/goods/searchGoods?type=%E8%A1%A3&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '衣' LIMIT 0,10   [ RunTime:0.0012s ]
+
+[ 2018-01-05T22:07:50+08:00 ] 106.120.206.170 /market/index.php/home/goods/searchGoods?type=%E8%A1%A3&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '衣' LIMIT 0,10   [ RunTime:0.0009s ]
+
+[ 2018-01-05T22:07:54+08:00 ] 106.120.206.170 //market/index.php/home/goods/getgoods?goodId=80&_=1515161275211
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `id` = 80 LIMIT 0,10   [ RunTime:0.0007s ]
+
+[ 2018-01-05T22:07:54+08:00 ] 106.120.206.170 /market/index.php/home/comments/viewcomments?goodsId=80&_=1515161275212
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+SQL: SHOW COLUMNS FROM `market_comments` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`user_id`,`content` FROM `market_comments` WHERE `goods_id` = 80 LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `market_user` WHERE `user_id` = 44 LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2018-01-05T22:07:58+08:00 ] 106.120.206.170 /market/index.php/home/car/addCar?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`nums`,`car_id` FROM `market_car` WHERE `goods_id` = 80 AND `car_id` = 37  [ RunTime:0.0008s ]
+SQL: INSERT INTO `market_car` (`goods_id`,`car_id`,`nums`) VALUES ('80','37','1') [ RunTime:0.0624s ]
+
+[ 2018-01-05T22:08:04+08:00 ] 106.120.206.170 /market/index.php/home/car/viewCar?carId=37&_=1515161285427
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`car_id`,`goods_id`,`nums` FROM `market_car` WHERE `car_id` = '37' LIMIT 0,10   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 6  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 5  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 73  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 4  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 77  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 83  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 80  [ RunTime:0.0011s ]
+
+[ 2018-01-05T22:08:10+08:00 ] 106.120.206.170 /market/index.php/home/car/updateCar?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0014s ]
+
+[ 2018-01-05T22:08:10+08:00 ] 106.120.206.170 /market/index.php/home/car/deleteCar?carId=54&_=1515161285428
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0015s ]
+SQL: DELETE FROM `market_car` WHERE `id` = 54 [ RunTime:0.0287s ]
+
+[ 2018-01-05T22:08:10+08:00 ] 106.120.206.170 /market/index.php/home/car/viewCar?carId=37&_=1515161285429
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000118s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`car_id`,`goods_id`,`nums` FROM `market_car` WHERE `car_id` = '37' LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 6  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 5  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 73  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 4  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 77  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 1  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 83  [ RunTime:0.0009s ]
+
+[ 2018-01-05T22:08:12+08:00 ] 106.120.206.170 /market/index.php/home/car/updateCar?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0013s ]
+
+[ 2018-01-05T22:08:12+08:00 ] 106.120.206.170 /market/index.php/home/car/deleteCar?carId=53&_=1515161285430
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000112s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0010s ]
+SQL: DELETE FROM `market_car` WHERE `id` = 53 [ RunTime:0.0202s ]
+
+[ 2018-01-05T22:08:12+08:00 ] 106.120.206.170 /market/index.php/home/car/viewCar?carId=37&_=1515161285431
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`car_id`,`goods_id`,`nums` FROM `market_car` WHERE `car_id` = '37' LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 6  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 5  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 73  [ RunTime:0.0012s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 4  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 77  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 1  [ RunTime:0.0008s ]
+
+[ 2018-01-05T22:08:14+08:00 ] 106.120.206.170 /market/index.php/home/car/viewCar?carId=37&_=1515161295587
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`car_id`,`goods_id`,`nums` FROM `market_car` WHERE `car_id` = '37' LIMIT 0,10   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 6  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 5  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 73  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 4  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 77  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 1  [ RunTime:0.0007s ]
+
+[ 2018-01-05T22:08:27+08:00 ] 106.120.206.170 /market/index.php/home/car/viewCar?carId=37&_=1515161308607
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`car_id`,`goods_id`,`nums` FROM `market_car` WHERE `car_id` = '37' LIMIT 0,10   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 6  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 5  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 73  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 4  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 77  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 1  [ RunTime:0.0008s ]
+
+[ 2018-01-05T22:42:48+08:00 ] 106.120.206.132 /market/index.php/Home/Goods/addGoods?userId=48
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0016s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /usr/share/nginx/html/market/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: INSERT INTO `market_goods` (`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img`) VALUES ('椅子','20','1000','好坐','48','家','http://111.230.233.124/market/Uploads/2018-01-05/5a4f8ee89fd24.jpg') [ RunTime:0.0205s ]
+
+[ 2018-01-05T22:42:49+08:00 ] 106.120.206.132 /market/index.php/Home/Goods/addGoods?userId=48
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0011s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /usr/share/nginx/html/market/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: INSERT INTO `market_goods` (`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img`) VALUES ('椅子','20','1000','好坐','48','家','http://111.230.233.124/market/Uploads/2018-01-05/5a4f8ee8eec5e.jpg') [ RunTime:0.0243s ]
+
+[ 2018-01-05T22:42:49+08:00 ] 106.120.206.132 /market/index.php/home/goods/viewGoods?user_id=48&_=1515163347060
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `user_id` = 48 LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-05T22:42:55+08:00 ] 106.120.206.132 /market/index.php/home/goods/updateGoods?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0015s ]
+
+[ 2018-01-05T22:42:55+08:00 ] 106.120.206.132 /market/index.php/home/goods/deleteGoods?goodsId=94&_=1515163347061
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000130s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0014s ]
+SQL: DELETE FROM `market_goods` WHERE `id` = 94 [ RunTime:0.0253s ]
+
+[ 2018-01-05T22:42:55+08:00 ] 106.120.206.132 /market/index.php/home/goods/viewGoods?user_id=48&_=1515163347062
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `user_id` = 48 LIMIT 0,10   [ RunTime:0.0011s ]
+
+[ 2018-01-05T22:43:41+08:00 ] 106.120.206.132 /market/index.php/Home/Goods/addGoods?userId=48
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0014s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /usr/share/nginx/html/market/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: INSERT INTO `market_goods` (`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img`) VALUES ('lv皮包','2000','1000','今年新款','48','衣','http://111.230.233.124/market/Uploads/2018-01-05/5a4f8f1cf4151.jpg') [ RunTime:0.0322s ]
+
+[ 2018-01-05T22:43:41+08:00 ] 106.120.206.132 /market/index.php/home/goods/viewGoods?user_id=48&_=1515163399354
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `user_id` = 48 LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-05T22:44:11+08:00 ] 106.120.206.132 /market/index.php/Home/Goods/addGoods?userId=48
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0011s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /usr/share/nginx/html/market/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: INSERT INTO `market_goods` (`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img`) VALUES ('lv手提包','10000','100','杨幂同款','48','衣','http://111.230.233.124/market/Uploads/2018-01-05/5a4f8f3b2e015.jpg') [ RunTime:0.0199s ]
+
+[ 2018-01-05T22:44:11+08:00 ] 106.120.206.132 /market/index.php/home/goods/viewGoods?user_id=48&_=1515163429550
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `user_id` = 48 LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-05T22:44:44+08:00 ] 106.120.206.132 /market/index.php/Home/Goods/addGoods?userId=48
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000107s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0016s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /usr/share/nginx/html/market/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: INSERT INTO `market_goods` (`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img`) VALUES ('针织衫','3000','2000','娜扎同款','48','衣','http://111.230.233.124/market/Uploads/2018-01-05/5a4f8f5c07c18.jpg') [ RunTime:0.0236s ]
+
+[ 2018-01-05T22:44:44+08:00 ] 106.120.206.132 /market/index.php/home/goods/viewGoods?user_id=48&_=1515163462434
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `user_id` = 48 LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-05T22:49:48+08:00 ] 106.120.206.132 /market/index.php/Home/Goods/addGoods?userId=48
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0020s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /usr/share/nginx/html/market/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: INSERT INTO `market_goods` (`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img`) VALUES ('电视','300','20','彩电','48','电','http://111.230.233.124/market/Uploads/2018-01-05/5a4f908c7c4d2.jpg') [ RunTime:0.0220s ]
+
+[ 2018-01-05T22:49:50+08:00 ] 106.120.206.132 /market/index.php/home/goods/viewGoods?user_id=48&_=1515163767385
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `user_id` = 48 LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-05T22:54:54+08:00 ] 106.120.206.132 /market/index.php/home/goods/searchGoods?type=%E7%94%B5&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '电' LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-05T22:55:02+08:00 ] 106.120.206.132 /market/index.php/home/goods/viewGoods?user_id=48&_=1515164079578
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `user_id` = 48 LIMIT 0,10   [ RunTime:0.0007s ]
+
+[ 2018-01-05T22:55:09+08:00 ] 106.120.206.132 /market/index.php/home/goods/searchGoods?type=%E8%A1%A3&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '衣' LIMIT 0,10   [ RunTime:0.0009s ]
+
+[ 2018-01-05T22:55:12+08:00 ] 106.120.206.132 /market/index.php/home/goods/searchGoods?type=%E7%94%B5&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '电' LIMIT 0,10   [ RunTime:0.0009s ]
+
+[ 2018-01-05T22:55:16+08:00 ] 106.120.206.132 /market/index.php/home/goods/searchGoods?type=%E8%A1%A3&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '衣' LIMIT 0,10   [ RunTime:0.0009s ]
+
+[ 2018-01-05T22:55:19+08:00 ] 106.120.206.132 //market/index.php/home/goods/getgoods?goodId=96&_=1515164096213
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `id` = 96 LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-05T22:55:19+08:00 ] 106.120.206.132 /market/index.php/home/comments/viewcomments?goodsId=96&_=1515164096214
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL: SHOW COLUMNS FROM `market_comments` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`user_id`,`content` FROM `market_comments` WHERE `goods_id` = 96 LIMIT 0,10   [ RunTime:0.0007s ]
+NOTIC: [2] Invalid argument supplied for foreach() /usr/share/nginx/html/market/Application/Home/Controller/CommentsController.class.php 第 27 行.
+
+[ 2018-01-05T23:05:05+08:00 ] 61.148.245.97 /market/index.php/home/goods/searchGoods?type=%E8%A1%A3&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '衣' LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-05T23:05:07+08:00 ] 61.148.245.97 /market/index.php/home/goods/searchGoods?type=%E7%94%B5&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '电' LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-05T23:05:09+08:00 ] 61.148.245.97 /market/index.php/home/goods/searchGoods?type=%E5%AE%B6&pn=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img` FROM `market_goods` WHERE `type` = '家' LIMIT 0,10   [ RunTime:0.0008s ]
+
+[ 2018-01-05T23:05:21+08:00 ] 61.148.245.97 /market/index.php/Home/User/login?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0014s ]
+SQL: SELECT `user_id`,`name`,`password`,`vol`,`is_sale` FROM `market_user` WHERE `name` = '123' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-01-05T23:05:31+08:00 ] 61.148.245.97 /market/index.php/home/car/viewCar?carId=37&_=1515164726124
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000128s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`car_id`,`goods_id`,`nums` FROM `market_car` WHERE `car_id` = '37' LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 6  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 5  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 73  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 4  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 77  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 1  [ RunTime:0.0007s ]
+
+[ 2018-01-05T23:19:42+08:00 ] 101.226.64.174 /market/index.php/home/car/updateCar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0014s ]
+
+[ 2018-01-05T23:26:28+08:00 ] 112.90.82.236 //market/index.php/home/goods/getgoods?goodId%3D83%26_%3D1515157525392
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `id` = 0 LIMIT 0,10   [ RunTime:0.0014s ]
+

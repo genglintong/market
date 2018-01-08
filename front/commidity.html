@@ -1,0 +1,761 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type"content="text/html; charset=utf-8"/>
+	<link type="text/css" rel="stylesheet" href="style/reset.css" >
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+
+	<link rel="stylesheet" href="style/bootstrap.min.css"  />
+	<link rel="stylesheet" href="style/jquery-ui-1.10.3.custom.min.css" />
+	<link rel="stylesheet" href="style/jquery.gritter.css" />
+	<link rel="stylesheet" href="style/select2.css" />
+	<link rel="stylesheet" href="style/bootstrap-editable.css" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />
+	<link rel="stylesheet" href="style/ace.min.css" />
+	<link rel="stylesheet" href="style/ace-rtl.min.css" />
+	<link rel="stylesheet" href="style/ace-skins.min.css" />
+	<link href="style/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="style/font-awesome.min.css" />
+
+	<!--[if IE 7]>
+	  <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
+	<![endif]-->
+
+	<!-- page specific plugin styles -->
+
+	<link rel="stylesheet" href="style/jquery-ui-1.10.3.custom.min.css" />
+
+	<!-- fonts -->
+
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />
+
+	<!-- ace styles -->
+
+	<link rel="stylesheet" href="style/ace.min.css" />
+	<link rel="stylesheet" href="style/ace-rtl.min.css" />
+	<link rel="stylesheet" href="style/ace-skins.min.css" />
+	<script src="js/ace-extra.min.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+	<title>商品详情</title>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<div class="topbar">
+				<div class="comWidth2">
+					<ul class="leftArea">
+						<li>
+							<a href="index.html">玫瑰网：二手玫瑰，手有余香</a>
+						</li>
+						<li>
+							<span class="sep">|</span>
+						</li>
+						<li>
+							<a href="#">关于我们</a>
+						</li>
+						<li>
+							<span class="sep">|</span>
+						</li>
+						<li>
+							<a href="#">问题反馈</a>
+						</li>
+						
+					</ul>
+					<div class="rightArea">
+						<div class="login fl" id="iflogin">
+							<a href="login.html">登录</a>
+							<span class="sep">|</span>
+							<a href="register.html">注册买家</a>
+							<span class="sep">|</span>
+							<a href="registerseller.html">注册卖家</a>
+						</div>
+						<div class="buy_car fl">
+							<a onclick='shopcarjumpTo()'>
+								<img src="images/shopcar.png" class="buy_car_img fr" />
+							</a>
+							<div class="buy_car_spec">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrap_inner_top">
+			<div class="container comWidth clearfix">
+				<div class="nav clearfix">
+					<div class="logo fl"></div>
+					<ul class="nav_list clearfix fl">
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="search.html">搜索</a>
+						</li>
+						<li>
+							<a href="subClothes.html">服装</a>
+						</li>
+						<li>
+							<a href="subElectro.html">电子设备</a>
+						</li>
+						<li>
+							<a href="subFurniture.html">家具</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="page-content">
+		<div>
+			<span id="profile-picture">
+				<img id="avatar" class="editable img-responsive" alt="Alex's Avatar" src="images/profile-pic.jpg" />
+			</span>
+		</div>
+		<div class="space-20"></div>
+
+		<div class="profile-user-info profile-user-info-striped">
+			<div class="profile-info-row">
+				<div class="profile-info-name"> 商品名称 </div>
+				<div class="profile-info-value">
+					<span class="editable" id="title">1</span>
+				</div>
+			</div>
+
+			<div class="profile-info-row">
+				<div class="profile-info-name"> 剩余量 </div>
+				<div class="profile-info-value">
+					<span class="editable" id="overplus">1</span>
+				</div>
+			</div>
+
+			<div class="profile-info-row">
+				<div class="profile-info-name"> 单价 </div>
+				<div class="profile-info-value">
+					<span class="editable" id="price">1</span>
+				</div>
+			</div>
+
+			<div class="profile-info-row">
+				<div class="profile-info-name"> 商品描述 </div>
+				<div class="profile-info-value">
+					<span class="editable" id="intro">1</span>
+				</div>
+			</div>
+			<div class="profile-info-row">
+				<div class="profile-info-name"> 商品类型 </div>
+				<div class="profile-info-value">
+					<span class="editable" id="type">1</span>
+				</div>
+			</div>
+			<div class="row btn-group pull-right">
+				<input type="button" style="cursor: pointer;font-style: inherit;" class="shop_btn btn btn-success btn-sm" value="加入购物车"  onclick="addshop()">
+			</div>
+		</div>
+		<div class="space-20"></div>
+
+		
+
+		<div class="space-20"></div>
+		<div class="widget-box transparent">
+			<div class="widget-header widget-header-small">
+				<h4 class="blue smaller">
+					<i class="icon-rss orange"></i>
+					评论
+				</h4>
+			</div>
+			<div class="widget-body">
+				<div class="widget-main padding-8">
+					<div id="profile-feed-1" class="profile-feed">
+						
+					</div>
+				</div>
+			</div>
+			<div class="space-20"></div>
+			<div class="space-20"></div>
+			<div class="space-20"></div>
+
+			<div class="row">
+				<div class="col-sm-6">
+					<h4 class="header blue">添加评论</h4>
+
+					<div class="widget-box">
+						<div class="widget-header widget-header-small  header-color-green">
+							<div class="widget-toolbar">
+								<a href="#" data-action="collapse">
+									<i class="icon-chevron-up"></i>
+								</a>
+							</div>
+						</div>
+
+						<div class="widget-body">
+							<div class="widget-main no-padding">
+								<div class="wysiwyg-editor" id="editor2" name="comment"></div>
+							</div>
+
+							<div class="widget-toolbox padding-4 clearfix">
+								
+								<div class="btn-group pull-right">
+									
+									<button class="btn btn-sm btn-success" id="publish" onclick="addComment()">
+										<i class="icon-globe bigger-125"></i>
+
+										发布
+										<i class="icon-arrow-right icon-on-right bigger-125"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/jquery.gritter.min.js"></script>
+<script src="js/bootbox.min.js"></script>
+<script src="js/jquery.slimscroll.min.js"></script>
+<script src="js/jquery.easy-pie-chart.min.js"></script>
+<script src="js/jquery.hotkeys.min.js"></script>
+<script src="js/bootstrap-wysiwyg.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script type="text/javascript">
+	if("ontouchend" in document) document.write("<script src='js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+</script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/typeahead-bs2.min.js"></script>
+
+<!-- page specific plugin scripts -->
+
+<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/markdown/markdown.min.js"></script>
+<script src="js/markdown/bootstrap-markdown.min.js"></script>
+<script src="js/jquery.hotkeys.min.js"></script>
+<script src="js/bootstrap-wysiwyg.min.js"></script>
+<script src="js/bootbox.min.js"></script>
+
+<!-- ace scripts -->
+
+<script src="js/ace-elements.min.js"></script>
+<script src="js/ace.min.js"></script>
+
+<!-- inline scripts related to this page -->
+
+<script type="text/javascript">
+	$(document).ready(function(){
+        update();
+        getinfo();
+        getComment();
+	});
+
+    function update(){
+		if(sessionStorage.customerId !== undefined && sessionStorage.is_sale == 1){
+			document.getElementById("iflogin").innerHTML='<a href="jqgrid.html">我的小铺</a>';
+		}
+		else if(sessionStorage.customerId !== undefined){
+			document.getElementById("iflogin").innerHTML='';
+		}
+	}
+
+	function getQueryVariable(variable){
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+           var pair = vars[i].split("=");
+           if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+	}
+
+	function getinfo(){
+		var id = getQueryVariable("id");
+
+		$.ajax({  
+            url: 'http://111.230.233.124//market/index.php/home/goods/getgoods?goodId='+id,  
+            type: 'Get',  
+            data: null,  
+            dataType: 'JSON',  
+            cache: false,
+            processData: false,  
+            contentType: false  
+        }).done(function(result){ 
+        	updateInfo(result.data[id]);
+        });
+	}
+
+	var stock;
+	function updateInfo(message){
+		document.getElementById("title").innerText=message["title"];
+		document.getElementById("price").innerText=message["price"];
+		stock=message["overplus"];
+		document.getElementById("overplus").innerText=stock;
+		document.getElementById("intro").innerText=message["intro"]+".";
+		document.getElementById("profile-picture").innerHTML='<img id="avatar" class="editable img-responsive" src="'+message["img"]+ '"    />';
+
+		if(message["type"]=="衣"){
+			document.getElementById("type").innerText="服装";
+		}
+		else if(message["type"]=="电"){
+			document.getElementById("type").innerText="电子设备";
+		}
+		if(message["type"]=="家"){
+			document.getElementById("type").innerText="家具";
+		}
+	}
+
+	function getComment()
+	{
+		var id = getQueryVariable("id");
+		$.ajax({  
+            url: 'http://111.230.233.124/market/index.php/home/comments/viewcomments?goodsId='+id,  
+            type: 'Get',  
+            data: null,  
+            dataType: 'JSON',  
+            cache: false,
+            processData: false,  
+            contentType: false  
+        }).done(function(result){ 
+        	console.log(result.data)
+        	updateComment(result.data)
+        	
+        });  
+	}
+
+	function updateComment(message)
+	{
+		$("#profile-feed-1").html('');
+		for(var i in message){
+			$("#profile-feed-1").append('<div class="profile-activity clearfix"><div><p class="user" >'+message[i].username+'</p>'+message[i].content+'</div></div>');
+		}
+
+	}
+
+	function addComment()
+	{
+		var id = getQueryVariable("id");
+		var data = new FormData();
+		var comment=$("#editor2").text();
+		console.log(comment)
+		if(sessionStorage.customerId==undefined||sessionStorage.customerId==null){
+			window.location.href="login.html"
+			// data.append("userId",1);
+		}
+		else{
+			data.append("userId",sessionStorage.uid);
+		}
+		
+		data.append("content",comment);
+
+		$.ajax({  
+            url: 'http://111.230.233.124/market/index.php/home/comments/addComments?goodsId='+id,  
+            type: 'Post',  
+            data: data,  
+            dataType: 'JSON',  
+            cache: false,
+            processData: false,  
+            contentType: false  
+        }).done(function(result){ 
+        	getComment();
+        	$("#editor2").text('');
+        });  
+	}
+
+	function addshop()
+	{
+		var id = getQueryVariable("id");
+		var userid=sessionStorage.uid;
+		var data=new FormData();
+		
+		if(userid==undefined||userid==null){
+			window.location.href="login.html";
+			return;
+		}
+		data.append("carId",userid);
+		var num=prompt("数量","");
+		
+		if(num==undefined||num==null||num==""){
+			console.log('blank');
+		}
+		else{
+			data.append("goodsId",id);
+			data.append("nums",num);
+		
+		    console.log(num);
+			if(stock>=num){
+				$.ajax({  
+	            url: 'http://111.230.233.124/market/index.php/home/car/addCar?',  
+	            type: 'Post',  
+	            data: data,  
+	            dataType: 'JSON',  
+	            cache: false,
+	            processData: false,  
+	            contentType: false  
+	        	}).done(function(result){ 
+	        		alert("已加入购物车");
+	        		
+		        });  
+			}
+		}
+		
+	}
+
+	jQuery(function($) {
+		
+		// *** editable avatar *** //
+		try {//ie8 throws some harmless exception, so let's catch it
+	
+			//it seems that editable plugin calls appendChild, and as Image doesn't have it, it causes errors on IE at unpredicted points
+			//so let's have a fake appendChild for it!
+			if( /msie\s*(8|7|6)/.test(navigator.userAgent.toLowerCase()) ) Image.prototype.appendChild = function(el){}
+	
+			var last_gritter
+			$('#avatar').editable({
+				type: 'image',
+				name: 'avatar',
+				value: null,
+				image: {
+					//specify ace file input plugin's options here
+					btn_choose: 'Change Avatar',
+					droppable: true,
+					/**
+					//this will override the default before_change that only accepts image files
+					before_change: function(files, dropped) {
+						return true;
+					},
+					*/
+	
+					//and a few extra ones here
+					name: 'avatar',//put the field name here as well, will be used inside the custom plugin
+					max_size: 110000,//~100Kb
+					on_error : function(code) {//on_error function will be called when the selected file has a problem
+						if(last_gritter) $.gritter.remove(last_gritter);
+						if(code == 1) {//file format error
+							last_gritter = $.gritter.add({
+								title: 'File is not an image!',
+								text: 'Please choose a jpg|gif|png image!',
+								class_name: 'gritter-error gritter-center'
+							});
+						} else if(code == 2) {//file size rror
+							last_gritter = $.gritter.add({
+								title: 'File too big!',
+								text: 'Image size should not exceed 100Kb!',
+								class_name: 'gritter-error gritter-center'
+							});
+						}
+						else {//other error
+						}
+					},
+					on_success : function() {
+						$.gritter.removeAll();
+					}
+				},
+			    url: function(params) {
+					// ***UPDATE AVATAR HERE*** //
+					//You can replace the contents of this function with examples/profile-avatar-update.js for actual upload
+	
+	
+					var deferred = new $.Deferred
+	
+					//if value is empty, means no valid files were selected
+					//but it may still be submitted by the plugin, because "" (empty string) is different from previous non-empty value whatever it was
+					//so we return just here to prevent problems
+					var value = $('#avatar').next().find('input[type=hidden]:eq(0)').val();
+					if(!value || value.length == 0) {
+						deferred.resolve();
+						return deferred.promise();
+					}
+	
+	
+					//dummy upload
+					setTimeout(function(){
+						if("FileReader" in window) {
+							//for browsers that have a thumbnail of selected image
+							var thumb = $('#avatar').next().find('img').data('thumb');
+							if(thumb) $('#avatar').get(0).src = thumb;
+						}
+						
+						deferred.resolve({'status':'OK'});
+	
+						if(last_gritter) $.gritter.remove(last_gritter);
+						last_gritter = $.gritter.add({
+							title: 'Avatar Updated!',
+							text: 'Uploading to server can be easily implemented. A working example is included with the template.',
+							class_name: 'gritter-info gritter-center'
+						});
+						
+					 } , parseInt(Math.random() * 800 + 800))
+	
+					return deferred.promise();
+				},
+				
+				success: function(response, newValue) {
+				}
+			})
+		}catch(e) {}
+		
+		
+	
+		//another option is using modals
+		$('#avatar2').on('click', function(){
+			var modal = 
+			'<div class="modal hide fade">\
+				<div class="modal-header">\
+					<button type="button" class="close" data-dismiss="modal">&times;</button>\
+					<h4 class="blue">Change Avatar</h4>\
+				</div>\
+				\
+				<form class="no-margin">\
+				<div class="modal-body">\
+					<div class="space-4"></div>\
+					<div style="width:75%;margin-left:12%;"><input type="file" name="file-input" /></div>\
+				</div>\
+				\
+				<div class="modal-footer center">\
+					<button type="submit" class="btn btn-small btn-success"><i class="icon-ok"></i> Submit</button>\
+					<button type="button" class="btn btn-small" data-dismiss="modal"><i class="icon-remove"></i> Cancel</button>\
+				</div>\
+				</form>\
+			</div>';
+			
+			
+			var modal = $(modal);
+			modal.modal("show").on("hidden", function(){
+				modal.remove();
+			});
+	
+			var working = false;
+	
+			var form = modal.find('form:eq(0)');
+			var file = form.find('input[type=file]').eq(0);
+			file.ace_file_input({
+				style:'well',
+				btn_choose:'Click to choose new avatar',
+				btn_change:null,
+				no_icon:'icon-picture',
+				thumbnail:'small',
+				before_remove: function() {
+					//don't remove/reset files while being uploaded
+					return !working;
+				},
+				before_change: function(files, dropped) {
+					var file = files[0];
+					if(typeof file === "string") {
+						//file is just a file name here (in browsers that don't support FileReader API)
+						if(! (/\.(jpe?g|png|gif)$/i).test(file) ) return false;
+					}
+					else {//file is a File object
+						var type = $.trim(file.type);
+						if( ( type.length > 0 && ! (/^image\/(jpe?g|png|gif)$/i).test(type) )
+								|| ( type.length == 0 && ! (/\.(jpe?g|png|gif)$/i).test(file.name) )//for android default browser!
+							) return false;
+	
+						if( file.size > 110000 ) {//~100Kb
+							return false;
+						}
+					}
+	
+					return true;
+				}
+			});
+	
+			form.on('submit', function(){
+				if(!file.data('ace_input_files')) return false;
+				
+				file.ace_file_input('disable');
+				form.find('button').attr('disabled', 'disabled');
+				form.find('.modal-body').append("<div class='center'><i class='icon-spinner icon-spin bigger-150 orange'></i></div>");
+				
+				var deferred = new $.Deferred;
+				working = true;
+				deferred.done(function() {
+					form.find('button').removeAttr('disabled');
+					form.find('input[type=file]').ace_file_input('enable');
+					form.find('.modal-body > :last-child').remove();
+					
+					modal.modal("hide");
+	
+					var thumb = file.next().find('img').data('thumb');
+					if(thumb) $('#avatar2').get(0).src = thumb;
+	
+					working = false;
+				});
+				
+				
+				setTimeout(function(){
+					deferred.resolve();
+				} , parseInt(Math.random() * 800 + 800));
+	
+				return false;
+			});
+					
+		});
+	
+		
+		$('#profile-feed-1').slimScroll({
+		height: '250px',
+		alwaysVisible : true
+		});
+	
+		
+	
+		$('.easy-pie-chart.percentage').each(function(){
+		var barColor = $(this).data('color') || '#555';
+		var trackColor = '#E2E2E2';
+		var size = parseInt($(this).data('size')) || 72;
+		$(this).easyPieChart({
+			barColor: barColor,
+			trackColor: trackColor,
+			scaleColor: false,
+			lineCap: 'butt',
+			lineWidth: parseInt(size/10),
+			animate:false,
+			size: size
+		}).css('color', barColor);
+		});
+	  
+		///////////////////////////////////////////
+	
+		//show the user info on right or left depending on its position
+		$('#user-profile-2 .memberdiv').on('mouseenter', function(){
+			var $this = $(this);
+			var $parent = $this.closest('.tab-pane');
+	
+			var off1 = $parent.offset();
+			var w1 = $parent.width();
+	
+			var off2 = $this.offset();
+			var w2 = $this.width();
+	
+			var place = 'left';
+			if( parseInt(off2.left) < parseInt(off1.left) + parseInt(w1 / 2) ) place = 'right';
+			
+			$this.find('.popover').removeClass('right left').addClass(place);
+		}).on('click', function() {
+			return false;
+		});
+	
+		//change profile
+		$('[data-toggle="buttons"] .btn').on('click', function(e){
+			var target = $(this).find('input[type=radio]');
+			var which = parseInt(target.val());
+			$('.user-profile').parent().addClass('hide');
+			$('#user-profile-'+which).parent().removeClass('hide');
+		});
+	});
+</script>
+
+	<script type="text/javascript">
+		jQuery(function($){
+
+function showErrorAlert (reason, detail) {
+	var msg='';
+	if (reason==='unsupported-file-type') { msg = "Unsupported format " +detail; }
+	else {
+		console.log("error uploading file", reason, detail);
+	}
+	$('<div class="alert"> <button type="button" class="close" data-dismiss="alert">&times;</button>'+ 
+	 '<strong>File upload error</strong> '+msg+' </div>').prependTo('#alerts');
+}
+
+
+
+$('#editor2').css({'height':'200px'}).ace_wysiwyg({
+	toolbar_place: function(toolbar) {
+		return $(this).closest('.widget-box').find('.widget-header').prepend(toolbar).children(0).addClass('inline');
+	},
+	toolbar:
+	[
+		'bold',
+		{name:'italic' , title:'Change Title!', icon: 'icon-leaf'},
+		'strikethrough',
+		null,
+		'insertunorderedlist',
+		'insertorderedlist',
+		null,
+		'justifyleft',
+		'justifycenter',
+		'justifyright'
+	],
+	speech_button:false
+});
+
+
+$('[data-toggle="buttons"] .btn').on('click', function(e){
+	var target = $(this).find('input[type=radio]');
+	var which = parseInt(target.val());
+	var toolbar = $('#editor1').prev().get(0);
+	if(which == 1 || which == 2 || which == 3) {
+		toolbar.className = toolbar.className.replace(/wysiwyg\-style(1|2)/g , '');
+		if(which == 1) $(toolbar).addClass('wysiwyg-style1');
+		else if(which == 2) $(toolbar).addClass('wysiwyg-style2');
+	}
+});
+
+
+//Add Image Resize Functionality to Chrome and Safari
+//webkit browsers don't have image resize functionality when content is editable
+//so let's add something using jQuery UI resizable
+//another option would be opening a dialog for user to enter dimensions.
+if ( typeof jQuery.ui !== 'undefined' && /applewebkit/.test(navigator.userAgent.toLowerCase()) ) {
+	
+	var lastResizableImg = null;
+	function destroyResizable() {
+		if(lastResizableImg == null) return;
+		lastResizableImg.resizable( "destroy" );
+		lastResizableImg.removeData('resizable');
+		lastResizableImg = null;
+	}
+
+	var enableImageResize = function() {
+		$('.wysiwyg-editor')
+		.on('mousedown', function(e) {
+			var target = $(e.target);
+			if( e.target instanceof HTMLImageElement ) {
+				if( !target.data('resizable') ) {
+					target.resizable({
+						aspectRatio: e.target.width / e.target.height,
+					});
+					target.data('resizable', true);
+					
+					if( lastResizableImg != null ) {//disable previous resizable image
+						lastResizableImg.resizable( "destroy" );
+						lastResizableImg.removeData('resizable');
+					}
+					lastResizableImg = target;
+				}
+			}
+		})
+		.on('click', function(e) {
+			if( lastResizableImg != null && !(e.target instanceof HTMLImageElement) ) {
+				destroyResizable();
+			}
+		})
+		.on('keydown', function() {
+			destroyResizable();
+		});
+    }
+	
+	enableImageResize();
+}
+});
+function shopcarjumpTo(p, url) { 
+		var customerId=sessionStorage.customerId; 
+		console.log(customerId)
+		if (customerId == undefined) { 
+ 		window.location.href="login.html";
+	} else { 
+  		window.location.href="shopcar.html";
+	} 
+} 
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+[ 2018-01-07T11:24:09+08:00 ] 106.120.206.172 /market/index.php/Home/User/login?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000177s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.2971s ]
+SQL: SELECT `user_id`,`name`,`password`,`vol`,`is_sale` FROM `market_user` WHERE `name` = '123' LIMIT 1   [ RunTime:0.0390s ]
+
+[ 2018-01-07T11:24:17+08:00 ] 106.120.206.172 /market/index.php/home/car/viewCar?carId=37&_=1515295459358
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`car_id`,`goods_id`,`nums` FROM `market_car` WHERE `car_id` = '37' LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 6  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 5  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 73  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 4  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 77  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 1  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 93  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 96  [ RunTime:0.0007s ]
+
+[ 2018-01-07T11:24:41+08:00 ] 106.120.206.172 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = '12345' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-01-07T11:24:48+08:00 ] 106.120.206.172 /market/index.php/Home/User/register?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `market_user` WHERE `name` = '12345678' LIMIT 1   [ RunTime:0.0007s ]
+SQL: INSERT INTO `market_user` (`name`,`password`,`is_sale`,`email`) VALUES ('12345678','827ccb0eea8a706c4c34a16891f84e7b','1','12345') [ RunTime:0.1033s ]
+
+[ 2018-01-07T11:24:56+08:00 ] 106.120.206.172 /market/index.php/Home/User/login?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0014s ]
+SQL: SELECT `user_id`,`name`,`password`,`vol`,`is_sale` FROM `market_user` WHERE `name` = '123456' LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [2] current() expects parameter 1 to be array, null given /usr/share/nginx/html/market/Application/Home/Controller/UserController.class.php 第 80 行.
+
+[ 2018-01-07T11:25:02+08:00 ] 106.120.206.172 /market/index.php/Home/User/login?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0016s ]
+SQL: SELECT `user_id`,`name`,`password`,`vol`,`is_sale` FROM `market_user` WHERE `name` = '1234567' LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [2] current() expects parameter 1 to be array, null given /usr/share/nginx/html/market/Application/Home/Controller/UserController.class.php 第 80 行.
+
+[ 2018-01-07T11:25:12+08:00 ] 106.120.206.172 /market/index.php/Home/User/login?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `market_user` [ RunTime:0.0014s ]
+SQL: SELECT `user_id`,`name`,`password`,`vol`,`is_sale` FROM `market_user` WHERE `name` = '12345678' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-01-07T11:25:16+08:00 ] 106.120.206.172 /market/index.php/home/goods/viewGoods?user_id=55&_=1515295518916
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `user_id` = 55 LIMIT 0,10   [ RunTime:0.0011s ]
+
+[ 2018-01-07T11:26:47+08:00 ] 106.120.206.172 /market/index.php/home/car/viewCar?carId=2&_=1515295609593
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`car_id`,`goods_id`,`nums` FROM `market_car` WHERE `car_id` = '2' LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 1  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `market_goods` WHERE `id` = 1  [ RunTime:0.0007s ]
+
+[ 2018-01-07T11:27:34+08:00 ] 106.120.206.172 /market/index.php/Home/Goods/addGoods?userId=undefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0021s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /usr/share/nginx/html/market/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: INSERT INTO `market_goods` (`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img`) VALUES ('www','0','23','adad','0','电','http://111.230.233.124/market/Uploads/2018-01-07/5a5193a6b5a06.jpg') [ RunTime:0.0509s ]
+
+[ 2018-01-07T11:27:35+08:00 ] 106.120.206.172 /market/index.php/home/goods/viewGoods?user_id=undefined&_=1515295657660
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`price`,`overplus`,`intro`,`type`,`img` FROM `market_goods` WHERE `user_id` = 0 LIMIT 0,10   [ RunTime:0.0022s ]
+
+[ 2018-01-07T11:34:01+08:00 ] 106.120.206.172 /market/index.php/home/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] Undefined variable: sex /usr/share/nginx/html/market/Application/Home/Controller/IndexController.class.php 第 19 行.
+
+[ 2018-01-07T11:34:06+08:00 ] 106.120.206.172 /market/index.php/home/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined variable: sex /usr/share/nginx/html/market/Application/Home/Controller/IndexController.class.php 第 19 行.
+
+[ 2018-01-07T11:34:09+08:00 ] 106.120.206.172 /market/index.php/home/index/index?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Undefined variable: sex /usr/share/nginx/html/market/Application/Home/Controller/IndexController.class.php 第 19 行.
+
+[ 2018-01-07T11:34:45+08:00 ] 106.120.206.172 /market/index.php/home/index/index?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+
+[ 2018-01-07T11:38:39+08:00 ] 106.120.206.172 /market/index.php/home/index/index?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /usr/share/nginx/html/market/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2018-01-07T11:43:21+08:00 ] 106.120.206.172 /market/index.php/home/index/index?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /usr/share/nginx/html/market/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+
+[ 2018-01-07T14:07:12+08:00 ] 183.57.53.197 /market/index.php/home/car/viewCar?carId%3D37%26_%3D1515295459358
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000128s ]
+SQL: SHOW COLUMNS FROM `market_car` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`car_id`,`goods_id`,`nums` FROM `market_car` WHERE `car_id` = 1 LIMIT 0,10   [ RunTime:0.0007s ]
+NOTIC: [2] Invalid argument supplied for foreach() /usr/share/nginx/html/market/Application/Home/Controller/CarController.class.php 第 26 行.
+
+[ 2018-01-07T14:36:55+08:00 ] 14.17.3.64 /market/index.php/Home/Goods/addGoods?userId%3Dundefined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `market_goods` [ RunTime:0.0014s ]
+SQL: INSERT INTO `market_goods` (`title`,`price`,`overplus`,`intro`,`user_id`,`type`,`img`) VALUES ('','0','0','','1','','') [ RunTime:0.0147s ]
+
+[ 2018-01-07T23:30:44+08:00 ] 106.120.206.172 /market/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000074s ]
+
